@@ -1,0 +1,12 @@
+.card {
+    width: 100%;
+            max-width: 200px;
+            margin: 30px auto;
+            padding: 20px;
+}
+
+body {
+ background-image: url("img/bg1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
