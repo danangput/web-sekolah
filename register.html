@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      :root {
+        --bg-primary: hsla(120, 1%, 33%, 0.5);
+      }
+      body {
+        /* background: linear-gradient(to right, red, rgb(166, 0, 255), blue); */
+        background-image: url(bg-lgn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Container -->
+    <div class="container text-white" style="letter-spacing: 3px">
+      <div class="d-flex align-items-center justify-content-center min-vh-100">
+        <!-- Start Card -->
+        <div
+          class="card text-white border border-info"
+          style="
+            background-color: var(--bg-primary);
+            width: 100%;
+            /* background-image: url(bg-lgn.jpg);
+   background-repeat: no-repeat;
+   background-size: cover; */
+          "
+        >
+          <div class="card-header">
+            <h2 class="h2 text-center">REGISTRASI</h2>
+          </div>
+          <div class="card-body fw-bold">
+            <form>
+              <div class="mb-3">
+                <label for="inputUsername" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputUsername"
+                  aria-describedby="emailHelp"
+                  placeholder="Input Username"
+                />
+                <!-- <div id="emailHelp" class="form-text">
+         We'll never share your email with anyone else.
+       </div> -->
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-describedby="emailHelp"
+                  placeholder="Input Email"
+                  required
+                />
+                <!-- <div id="emailHelp" class="form-text">
+         We'll never share your email with anyone else.
+       </div> -->
+              </div>
+              <div class="mb-3">
+                <label for="inputNoTelepon" class="form-label"
+                  >No Telepon</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputNoTelepon"
+                  aria-describedby="emailHelp"
+                  placeholder="Input No Telp"
+                />
+                <!-- <div id="emailHelp" class="form-text">
+         We'll never share your email with anyone else.
+       </div> -->
+              </div>
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Input Password"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="reInputPassword" class="form-label"
+                  >Input Again Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="reInputPassword"
+                  placeholder="Input Password"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input d-flex justify-content-center"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Save Changes</label
+                >
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-lg btn-primary">
+                  <i class="bi bi-pencil-square"></i>
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+      <!-- End Container -->
+    </div>
+    <link rel="stylesheet" href="assets/boostrap/js/bootstrap.js" />
+  </body>
+</html>
