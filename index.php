@@ -16,6 +16,10 @@ switch ($page) {
     case 'visi_misi':
         include "view/visi_misi.php";
         break;
+    case 'jurusan':
+            include "view/jurusan.php";
+            break;
+    
 
 }
 

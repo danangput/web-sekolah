@@ -7,13 +7,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active fw-bold " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active fw-bold " aria-current="page" href="/web-sekolah/index.php?page=home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="view/visi_misi.php">Visi dan Misi</a>
+            <a class="nav-link fw-bold" href="http://localhost/web-sekolah/index.php?page=visi_misi">Visi dan Misi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="jurusan.html">Jurusan</a>
+            <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=jurusan">Jurusan</a>
           </li>
         </ul>
       </div>
