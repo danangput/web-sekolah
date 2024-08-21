@@ -124,7 +124,7 @@
        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae fugiat exercitationem nihil voluptatum expedita praesentium pariatur eligendi placeat velit. Error, ut eveniet? Harum iusto officia ad aliquam saepe fugiat!</p></div>
       </div>
        <div class="col-3">
-        <img class="img-fluid rounded-circle" src="public/img/guru.jpg" alt="" srcset="" style="height: 250px;">
+        <img class="img-fluid rounded-circle" src="public/img/guruN.jpg" alt="" srcset="" style="height: 250px;">
       </div>
     </div>
     <div class="row my-2 align-items-center">
