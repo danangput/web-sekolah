@@ -16,7 +16,7 @@
                         <div class="g-col-6">
                             <img src="public/img/coding.png" alt="" class="rounded float-start" style="width: 50%">
                         </div>
-                        <div class="g-col-6">
+                        <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, minima.
                                 Neque quibusdam sint
                                 animi amet ex possimus. Quam nemo ab necessitatibus, perspiciatis animi adipisci
@@ -37,7 +37,7 @@
                         <div class="g-col-6">
                             <img src="public/img/ml.jpg" alt="" class="rounded float-start" style="width: 50%">
                         </div>
-                        <div class="g-col-6">
+                        <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
                                 minima. Neque quibusdam sint
                                 animi amet ex possimus. Quam nemo ab necessitatibus, perspiciatis animi adipisci
@@ -58,7 +58,7 @@
                         <div class="g-col-6">
                             <img src="public/img/analis.jpg" alt="" class="rounded float-start" style="width: 50%">
                         </div>
-                        <div class="g-col-6">
+                        <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
                                 minima. Neque quibusdam sint
                                 animi amet ex possimus. Quam nemo ab necessitatibus, perspiciatis animi adipisci
