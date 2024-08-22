@@ -1,71 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel dengan Gambar di Samping</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-  <body>
-    <img
-      src="public/img/bg-login.jpg"
-      class="img-fluid position-fixed"
-      alt=""
-    />
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-center min-vh-100">
-        <div class="card border border-primary" style="width: 30rem">
-          <div class="card-body">
-            <h2 class="card-title text-center">Login</h2>
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="d-flex justify-content-evenly">
-                <button type="submit" class="btn btn-primary">
-                  <i class="bi bi-box-arrow-in-right"></i> Login
-                </button>
-                <button type="submit" class="btn btn-success">
-                  <i class="bi bi-pencil-square"></i>
-                  <a
-                    href="register.html"
-                    target="_blank"
-                    class="text-decoration-none text-white"
-                    >Register</a
-                  >
-                </button>
-              </div>
-            </form>
-          </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Artikel</a>
+  </div>
+</nav>
+
+<!-- Container Utama -->
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Artikel Terbaru</h1>
+
+    <!-- Artikel -->
+    <div class="row">
+        <!-- Gambar -->
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Gambar Artikel">
         </div>
-      </div>
+
+        <!-- Teks Artikel -->
+        <div class="col-md-6">
+            <h2>Judul Artikel</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel velit eget dolor vestibulum dignissim. Nullam gravida vehicula erat, non sollicitudin odio. In ultricies felis vel urna feugiat, nec fermentum urna fermentum. Duis interdum urna in orci facilisis, nec sodales eros tincidunt.</p>
+            <p>Praesent euismod dolor nec nulla hendrerit, ac facilisis purus vehicula. Cras euismod velit id felis viverra, vel convallis ligula fermentum. Nam nec volutpat justo. Sed fringilla eros ac lorem fermentum, ac egestas orci rutrum.</p>
+        </div>
     </div>
-  </body>
-  <script src="assets/boostrap/js/bootstrap.js"></script>
+</div>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
