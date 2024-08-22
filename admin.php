@@ -10,6 +10,7 @@ if (isset($_GET['page'])) {
 
 switch ($page) {
     case 'artikel':
+        include "controller/artikel/table_artikel.php";
         include "view/admin/artikel/table.php";
         break;
     case 'artikel-edit':
@@ -24,6 +25,9 @@ switch ($page) {
     case 'jurusan-tambah':
         include "view/admin/jurusan/tambah.php";
         break;
+    case 'jurusan-edit':
+        include "view/admin/jurusan/edit.php";
+        break;
     case 'guru':
         include "view/admin/guru/table.php";
         break;
@@ -32,6 +36,15 @@ switch ($page) {
         break;
     case 'guru-edit':
         include "view/admin/guru/edit.php";
+        break;
+    case 'prestasi':
+        include "view/admin/prestasi/table.php";
+        break;
+    case 'prestasi-tambah':
+        include "view/admin/prestasi/tambah.php";
+        break;
+    case 'prestasi-edit':
+        include "view/admin/prestasi/edit.php";
         break;
 }
 

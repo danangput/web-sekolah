@@ -26,9 +26,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
+                        <td><?= $artikel['id']?></td>
+                        <td><?= $artikel['judul'] ?></td>
+                        <td><?= $artikel['image'] ?></td>
                         <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
                     </tr>
                 </tbody>
