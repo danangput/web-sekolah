@@ -38,7 +38,7 @@
                           <td>1</td>
                           <td>System Architect</td>
                           <td>Edinburgh</td>
-                          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel perspiciatis laudantium corrupti impedit enim, placeat voluptates tempore deleniti nemo officia provident adipisci eos ipsum quod! Unde minus eaque aliquid vero.</td>
+                          <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
                       </tr>
                   </tbody>
               </table>
