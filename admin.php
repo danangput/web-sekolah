@@ -24,6 +24,15 @@ switch ($page) {
     case 'jurusan-tambah':
         include "view/admin/jurusan/tambah.php";
         break;
+    case 'guru':
+        include "view/admin/guru/table.php";
+        break;
+    case 'guru-tambah':
+        include "view/admin/guru/tambah.php";
+        break;
+    case 'guru-edit':
+        include "view/admin/guru/edit.php";
+        break;
 }
 
 include "layout_admin/footer.php";

@@ -31,6 +31,7 @@
                           <th>Nama</th>
                           <th>Gambar</th>
                           <th>Description</th>
+                          <th>Action</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -39,6 +40,7 @@
                           <td>System Architect</td>
                           <td>Edinburgh</td>
                           <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
+                          <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
                       </tr>
                   </tbody>
               </table>
