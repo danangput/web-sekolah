@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 22, 2024 at 02:56 AM
+-- Generation Time: Aug 22, 2024 at 03:07 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -31,8 +31,8 @@ CREATE TABLE `artikel` (
   `id_artikel` int NOT NULL,
   `judul_artikel` varchar(300) NOT NULL,
   `tanggal` date NOT NULL,
-  `gamar` mediumblob NOT NULL,
-  `content` longtext NOT NULL
+  `gambar` varchar(255) NOT NULL,
+  `deskripsi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -46,7 +46,7 @@ CREATE TABLE `guru` (
   `nama_guru` varchar(100) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `no_telp` int NOT NULL,
-  `gamar_guru` varchar(100) NOT NULL
+  `gambar_guru` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -58,7 +58,7 @@ CREATE TABLE `guru` (
 CREATE TABLE `jurusan` (
   `id_jurusan` int NOT NULL,
   `nama_jurusan` varchar(300) NOT NULL,
-  `gambar` mediumblob NOT NULL,
+  `gambar` varchar(255) NOT NULL,
   `deskripsi` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -72,7 +72,7 @@ CREATE TABLE `prestasi` (
   `id_prestasi` int NOT NULL,
   `nama` varchar(255) NOT NULL,
   `deskripsi` text NOT NULL,
-  `gambar_prestasi` mediumblob NOT NULL,
+  `gambar_prestasi` varchar(255) NOT NULL,
   `tanggal` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -85,7 +85,7 @@ CREATE TABLE `prestasi` (
 CREATE TABLE `user` (
   `id` int NOT NULL,
   `username` varchar(244) NOT NULL,
-  `password` char(15) NOT NULL
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -95,7 +95,7 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `visi_misi` (
-  `Id_visimisi` int NOT NULL,
+  `id` int NOT NULL,
   `judul_visimisi` varchar(255) NOT NULL,
   `visi` text NOT NULL,
   `misi` text NOT NULL
@@ -139,7 +139,7 @@ ALTER TABLE `user`
 -- Indexes for table `visi_misi`
 --
 ALTER TABLE `visi_misi`
-  ADD PRIMARY KEY (`Id_visimisi`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -179,7 +179,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `visi_misi`
 --
 ALTER TABLE `visi_misi`
-  MODIFY `Id_visimisi` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
