@@ -10,6 +10,7 @@ if (isset($_GET['page'])) {
 
 switch ($page) {
     case 'artikel':
+        include "controller/artikel/table_artikel.php";
         include "view/admin/artikel/table.php";
         break;
 }
