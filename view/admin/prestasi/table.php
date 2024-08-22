@@ -2,13 +2,13 @@
   <div class="container-fluid mt-5">
   
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Daftar Jurusan</h1>
+  <h1 class="h3 mb-2 text-gray-800">Daftar Prestasi</h1>
   <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aliquam?</p>
   
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
       <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary text-center">Data Jurusan</h6>
+          <h6 class="m-0 font-weight-bold text-primary text-center">Data Prestasi</h6>
       </div>
       <div class="card-body">
           <div class="my-2">
@@ -19,9 +19,10 @@
                   <thead>
                       <tr>
                           <th>No</th>
-                          <th>Nama</th>
-                          <th>Gambar</th>
+                          <th>Name</th>
                           <th>Description</th>
+                          <th>Image</th>
+                          <th>Date</th>
                           <th>Action</th>
                       </tr>
                   </thead>
@@ -29,6 +30,7 @@
                       <tr>
                           <td>1</td>
                           <td>System Architect</td>
+                          <td>Edinburgh</td>
                           <td>Edinburgh</td>
                           <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
                           <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>

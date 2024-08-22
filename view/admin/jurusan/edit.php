@@ -1,13 +1,9 @@
 <div class="container mt-5">
-    <h2 class="h2 text-center">Tambah</h2>
+    <h2 class="h2 text-center">Edit</h2>
     <form>
   <div class="mb-3">
-    <label for="inputTitle" class="form-label">Title</label>
-    <input type="text" class="form-control" id="inputTitle">
-  </div>
-  <div class="mb-3">
-    <label for="inputDate" class="form-label">Date</label><br>
-    <input type="date" id="inputDate">
+    <label for="inputName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="inputName">
   </div>
   <div class="mb-3">
     <label for="inputImage">Image</label>
