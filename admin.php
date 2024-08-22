@@ -33,6 +33,15 @@ switch ($page) {
     case 'guru-edit':
         include "view/admin/guru/edit.php";
         break;
+    case 'prestasi':
+        include "view/admin/prestasi/table.php";
+        break;
+    case 'prestasi-tambah':
+        include "view/admin/prestasi/tambah.php";
+        break;
+    case 'prestasi-edit':
+        include "view/admin/prestasi/edit.php";
+        break;
 }
 
 include "layout_admin/footer.php";
