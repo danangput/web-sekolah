@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-  </body>
-  </html>
-  <div class="container mt-5">
+<div class="container mt-5">
     <h2 class="h2 text-center">Tambah</h2>
     <form>
   <div class="mb-3">
-    <label for="inputJudul" class="form-label">Judul</label>
-    <input type="text" class="form-control" id="inputJudul">
+    <label for="inputTitle" class="form-label">Title</label>
+    <input type="text" class="form-control" id="inputTitle">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="mb-3">
+    <label for="inputDate" class="form-label">Date</label><br>
+    <input type="date" id="inputDate">
+  </div>
+  <div class="mb-3">
+    <label for="inputImage">Image</label>
+    <input type="file" class="form-control-file" id="inputImage">
+  </div>
+  <div class="mb-3">
+    <label for="inputDesc">Description</label>
+    <textarea class="form-control" id="inputDesc" rows="3" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
 </form>
   </div>
