@@ -1,7 +1,6 @@
 <?php
 include "layout/header.php";
 include "layout/navbar.php";
-// include "view/home.php";
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
