@@ -25,6 +25,9 @@ switch ($page) {
     case 'jurusan-tambah':
         include "view/admin/jurusan/tambah.php";
         break;
+    case 'jurusan-edit':
+        include "view/admin/jurusan/edit.php";
+        break;
     case 'guru':
         include "view/admin/guru/table.php";
         break;
