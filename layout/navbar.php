@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=jurusan">Jurusan</a>
           </li>
+          <li>
+          <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=jurusan">Prestasi</a>
+          </li>
         </ul>
       </div>
     </div>
