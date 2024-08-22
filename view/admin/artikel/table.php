@@ -8,7 +8,7 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        <h6 class="m-0 font-weight-bold text-primary text-center">Data Article</h6>
     </div>
     <div class="card-body">
         <div class="my-2">
@@ -29,7 +29,7 @@
                         <td>Tiger Nixon</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td><a href="">Hapus</a> | <a href="">Edit</a></td>
+                        <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
                     </tr>
                 </tbody>
             </table>
