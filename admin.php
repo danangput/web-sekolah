@@ -13,11 +13,11 @@ switch ($page) {
         include "controller/artikel/table_artikel.php";
         include "view/admin/artikel/table.php";
         break;
-    case 'artikel-edit':
-        include "view/admin/artikel/edit.php";
-        break;
     case 'artikel-tambah':
         include "view/admin/artikel/tambah.php";
+        break;
+    case 'artikel-edit':
+        include "view/admin/artikel/edit.php";
         break;
     case 'jurusan':
         include "view/admin/jurusan/table.php";

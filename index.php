@@ -16,17 +16,29 @@ switch ($page) {
         include "view/visi_misi.php";
         break;
     case 'jurusan':
-            include "view/jurusan.php";
-            break;
-     case 'prestasi':
-           include "view/prestasi.php";
-                break;
-                case 'artikel':
-                    include "view/artikel.php";
-                        break;
+        include "view/jurusan.php";
+        break;
+    case 'prestasi':
+        include "view/prestasi.php";
+        break;
+    case 'guru':
+        include "view/guru.php";
+        break;
+    case 'artikel':
+        include "view/artikel.php";
+        break;
     case 'show_artikel':
-            include "view/show_artikel.php";
-             break;
+        include "view/show_artikel.php";
+        break;
+    case 'infor':
+        include "view/detailjurusan/infor.php";
+        break;
+    case 'machine':
+        include "view/detailjurusan/machine.php";
+        break;
+    case 'analis':
+        include "view/detailjurusan/analis.php";
+        break;
     
 
 }

@@ -56,7 +56,7 @@
                 <p class="card-text text-truncate">
                   Informatika adalah bidang studi yang mempelajari pengembangan dan penerapan teknologi informasi, sistem komputer, dan perangkat lunak.
                 </p>
-                <a href="#" class="btn btn-primary">Baca Selanjutnya 
+                <a href="/web-sekolah/index.php?page=infor" class="btn btn-primary">Baca Selanjutnya 
                   <i class="bi bi-box-arrow-right"></i>
                 </a>
               </div>
@@ -73,7 +73,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Baca selanjutnya 
+                <a href="/web-sekolah/index.php?page=machine" class="btn btn-primary">Baca selanjutnya 
                   <i class="bi bi-box-arrow-right"></i>
                 </a>
               </div>
@@ -90,7 +90,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Baca Selanjutnya
+                <a href="/web-sekolah/index.php?page=analis" class="btn btn-primary">Baca Selanjutnya
                   <i class="bi bi-box-arrow-right"></i>
                 </a>
               </div>

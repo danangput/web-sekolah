@@ -6,7 +6,7 @@
     <div class="row mt-5">
         <!-- Gambar -->
         <div class="col-md-3">
-            <img src="public/img/analis.jpg" class="img-fluid rounded" alt="Gambar Artikel" style="">
+            <img src="public/img/analis.jpg" class="img-fluid rounded" alt="Gambar Artikel">
         </div>
 
         <!-- Teks Artikel -->
@@ -20,7 +20,7 @@
      <div class="row"style="margin-top: 100px;">
         <!-- Gambar -->
         <div class="col-md-3" >
-            <img src="public/img/coding.png" class="img-fluid rounded" alt="Gambar Artikel" style="">
+            <img src="public/img/coding.png" class="img-fluid rounded" alt="Gambar Artikel">
         </div>
 
         <!-- Teks Artikel -->
