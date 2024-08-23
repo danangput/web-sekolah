@@ -21,6 +21,9 @@ switch ($page) {
     case 'prestasi':
         include "view/prestasi.php";
         break;
+    case 'guru':
+        include "view/guru.php";
+        break;
     case 'artikel':
         include "view/artikel.php";
         break;
