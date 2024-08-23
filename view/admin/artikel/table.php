@@ -12,7 +12,7 @@
     </div>
     <div class="card-body">
         <div class="my-2">
-            <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+            <a href="/web-sekolah/admin.php?page=artikel-tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
         </div>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -25,12 +25,19 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+                $i = 1;
+                while ($artikel = mysqli_fetch_assoc($query)) {
+                ?>
                     <tr>
-                        <td><?= $artikel['id']?></td>
-                        <td><?= $artikel['judul'] ?></td>
-                        <td><?= $artikel['image'] ?></td>
+                        <td><?= $i++?></td>
+                        <td><?= $artikel['judul_artikel'] ?></td>
+                        <td><?= $artikel['gambar'] ?></td>
                         <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
                     </tr>
+                    <?php
+                }
+                ?>
                 </tbody>
             </table>
         </div>

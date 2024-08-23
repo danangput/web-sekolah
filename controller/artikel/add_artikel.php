@@ -1,24 +1,18 @@
-<?php 
-include "../db_connect.php"; // Menyertakan file koneksi database
+<?php
+include("controller/db_connect.php");
 
-// Mengambil data dari form yang dikirim dengan metode POST
-$judul = $_POST['judul'];
-$desc = $_POST['deskripsi'];
-$tanggal = $_POST['tanggal'];
+if(isset($_POST['submit'])){
+    $judul = $_POST['judul_artikel'];
+    $tanggal = $_POST['tanggal'];
+    $gambar = $_POST['gambar'];
+    $deskripsi = $_POST['deskripsi'];
 
-// Mengambil nama file gambar dan lokasi sementara file tersebut
-$gambar = $_FILES['image']['name'];
-$tmp = $_FILES['image']['tmp_name'];
-$folder = "../assets/images/artikel/$gambar"; // Menentukan folder tempat gambar akan disimpan
+    mysqli_query($conn, "INSERT INTO artikel(judul_artikel, tanggal, gambar, deskripsi) VALUES($judul, $tanggal, $gambar, $deskripsi)");
 
-// Memindahkan file gambar dari lokasi sementara ke folder tujuan
-move_uploaded_file($tmp, $folder);
+    header("location:/web-sekolah/admin.php?page=artikel");
 
-// Menyimpan data artikel ke dalam tabel 'artikel' di database
-$query = mysqli_query($conn, "INSERT INTO artikel VALUES ('', '$judul', '$desc', '$folder', '$tanggal')");
-
-// Jika query berhasil, redirect ke halaman admin dengan parameter 'page=artikel'
-if ($query) {
-    header("location: admin.php?page=artikel");
+}else {
+    echo "gagal input";
 }
+
 ?>

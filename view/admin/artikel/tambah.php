@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2 class="h2 text-center">Tambah</h2>
-    <form>
+    <form action="../../../controller/add_artikel.php" method="POST">
   <div class="mb-3">
     <label for="inputTitle" class="form-label">Title</label>
     <input type="text" class="form-control" id="inputTitle">
@@ -17,6 +17,6 @@
     <label for="inputDesc">Description</label>
     <textarea class="form-control" id="inputDesc" rows="3" required></textarea>
   </div>
-  <button type="submit" class="btn btn-info">Submit</button>
+  <button type="submit" class="btn btn-info" name="submit">Submit</button>
 </form>
   </div>
