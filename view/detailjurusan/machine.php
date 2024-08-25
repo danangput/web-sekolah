@@ -1,6 +1,6 @@
 <!-- Container Utama -->
 <br><br><br><br>
-<div class="container mt-5">
+<div class="container mt-5" style="letter-spacing: 1.5px">
     <!-- Artikel 1 -->
     <article class="mb-5">
         <header class="article-header mb-3">

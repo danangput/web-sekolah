@@ -3,7 +3,7 @@
 <style>
     
     </style>
-    <h1 class="text-center mb-5" style="margin-top: 100px;">Daftar Prestasi</h1>
+    <h1 class="text-center mb-5 text-uppercase" style="margin-top: 100px;">Daftar Prestasi</h1>
 
     <!-- Baris Kartu Prestasi -->
     <div class="row">

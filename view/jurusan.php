@@ -11,10 +11,10 @@
 
                     <!-- gambar pertama -->
 
-                    <h2 class="h2">Informatika</h2>
+                    <h2 class="h2 text-uppercase mb-3">Informatika</h2>
                     <div class="grid text-center">
                         <div class="g-col-6">
-                            <img src="public/img/coding.png" alt="" class="rounded float-start" style="width: 50%">
+                            <img src="public/img/coding.png" alt="" class="rounded float-start mb-5" style="width: 50%; margin-right: 3rem">
                         </div>
                         <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, minima.
@@ -32,10 +32,10 @@
 
                     <!-- gambar kedua -->
 
-                    <h2 class="h2">Machine Learning</h2>
+                    <h2 class="h2 text-uppercase mb-3">Machine Learning</h2>
                     <div class="grid text-center">
                         <div class="g-col-6">
-                            <img src="public/img/ml.jpg" alt="" class="rounded float-start" style="width: 50%">
+                            <img src="public/img/ml.jpg" alt="" class="rounded float-start mb-5" style="width: 50%; margin-right: 3rem">
                         </div>
                         <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
@@ -53,10 +53,10 @@
 
                     <!-- gambar ketiga -->
 
-                    <h2 class="h2">Data Analyst</h2>
+                    <h2 class="h2 text-uppercase mb-3">Data Analyst</h2>
                     <div class="grid text-center">
                         <div class="g-col-6">
-                            <img src="public/img/analis.jpg" alt="" class="rounded float-start" style="width: 50%">
+                            <img src="public/img/analis.jpg" alt="" class="rounded float-start mb-5" style="width: 50%; margin-right: 3rem">
                         </div>
                         <div class="g-col-6"><br><br><br>
                             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,

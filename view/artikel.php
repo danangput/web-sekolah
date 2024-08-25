@@ -1,6 +1,6 @@
 <!-- Container Utama -->
 <div class="container mt-5">
-    <h1 class="text-center mb-4" style="margin-top: 100px;">Artikel Terbaru</h1>
+    <h1 class="text-center mb-4 text-uppercase" style="margin-top: 100px;">Artikel Terbaru</h1>
 
     <!-- Artikel -->
     <div class="row mt-5">

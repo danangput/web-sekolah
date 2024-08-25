@@ -1,13 +1,12 @@
 
   <!-- end navigasi bar -->
-   <div id="Visi_dan_misi.html">
-  <div class="container mt-5">
+  <div class="container" style="margin-top: 16rem; margin-bottom: 16rem">
     <div class="row">
         <!-- Card for Visi -->
         <div class="col-8">
-            <div class="card">
+            <div class="card shadow border-3 border-warning">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="card-title mb-0">Visi dan Misi</h4>
+                    <h4 class="card-title mb-0 text-uppercase text-center">Visi dan Misi</h4>
                 </div>
                 <div class="card-body">
                     <h4>Visi</h4>
@@ -21,9 +20,9 @@
 
         <!-- Card for Misi -->
         <div class="col-4">
-            <div class="card">
+            <div class="card shadow border-3 border-danger">
                 <div class="card-header bg-dark-subtle text-drak">
-                    <h4 class="card-title mb-0">Sejarah</h4>
+                    <h4 class="card-title mb-0 text-uppercase text-center">Sejarah</h4>
                 </div>
                 <div class="card-body">
                     <ul class="card-text">
@@ -38,7 +37,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 </div>
   
