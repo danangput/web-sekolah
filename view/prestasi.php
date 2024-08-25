@@ -1,8 +1,5 @@
 <!-- Container Utama -->
-<div class="container mt-5">
-<style>
-    
-    </style>
+<div class="container" style="margin-top: 11.3rem; margin-bottom: 7rem">
     <h1 class="text-center mb-5 text-uppercase" style="margin-top: 100px;">Daftar Prestasi</h1>
 
     <!-- Baris Kartu Prestasi -->
