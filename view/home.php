@@ -44,68 +44,68 @@
     <section class="kartu">
       <!-- Start container -->
       <div class="container mb-2 mt-2">
-        <!-- Start row -->
-         <h1 class="text-center mb-5">JURUSAN</h1>
-        <div class="row g-1">
-          <!-- Start col ke 1 -->
-          <div class="col-4">
-            <div class="card" style="width: 18rem">
-              <img src="public/img/coding.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Informatika</h5>
-                <p class="card-text text-truncate">
-                  Informatika adalah bidang studi yang mempelajari pengembangan dan penerapan teknologi informasi, sistem komputer, dan perangkat lunak.
-                </p>
-                <a href="/web-sekolah/index.php?page=infor" class="btn btn-primary">Baca Selanjutnya 
-                  <i class="bi bi-box-arrow-right"></i>
-                </a>
+      <h1 class="text-center mb-5">JURUSAN</h1>
+          <!-- Start row -->
+          <div class="row">
+            <!-- Start col ke 1 -->
+            <div class="col-4 d-flex justify-content-center">
+              <div class="card shadow" style="width: 18rem">
+                <img src="public/img/coding.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Informatika</h5>
+                  <p class="card-text text-truncate">
+                    Informatika adalah bidang studi yang mempelajari pengembangan dan penerapan teknologi informasi, sistem komputer, dan perangkat lunak.
+                  </p>
+                  <a href="/web-sekolah/index.php?page=infor" class="btn btn-primary">Baca Selanjutnya 
+                    <i class="bi bi-box-arrow-right"></i>
+                  </a>
+                </div>
               </div>
+              <!-- End col ke 1 -->
             </div>
-            <!-- End col ke 1 -->
-          </div>
-          <!-- Start col ke 2 -->
-          <div class="col-4">
-            <div class="card" style="width: 18rem">
-              <img src="public/img/ml.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Mesin Learning</h5>
-                <p class="card-text text-truncate">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="/web-sekolah/index.php?page=machine" class="btn btn-primary">Baca selanjutnya 
-                  <i class="bi bi-box-arrow-right"></i>
-                </a>
+            <!-- Start col ke 2 -->
+            <div class="col-4 d-flex justify-content-center">
+              <div class="card shadow" style="width: 18rem">
+                <img src="public/img/ml.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Mesin Learning</h5>
+                  <p class="card-text text-truncate">
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                  </p>
+                  <a href="/web-sekolah/index.php?page=machine" class="btn btn-primary">Baca selanjutnya 
+                    <i class="bi bi-box-arrow-right"></i>
+                  </a>
+                </div>
               </div>
+              <!-- End col ke 2 -->
             </div>
-            <!-- End col ke 2 -->
-          </div>
-          <!-- Start col ke 3 -->
-          <div class="col-4">
-            <div class="card" style="width: 18rem">
-              <img src="public/img/analis.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Data analis</h5>
-                <p class="card-text text-truncate">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="/web-sekolah/index.php?page=analis" class="btn btn-primary">Baca Selanjutnya
-                  <i class="bi bi-box-arrow-right"></i>
-                </a>
+            <!-- Start col ke 3 -->
+            <div class="col-4 d-flex justify-content-center">
+              <div class="card shadow" style="width: 18rem">
+                <img src="public/img/analis.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Data analis</h5>
+                  <p class="card-text text-truncate">
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                  </p>
+                  <a href="/web-sekolah/index.php?page=analis" class="btn btn-primary">Baca Selanjutnya
+                    <i class="bi bi-box-arrow-right"></i>
+                  </a>
+                </div>
               </div>
+              <!-- End col ke 3 -->
             </div>
-            <!-- End col ke 3 -->
+            <!-- End row -->
           </div>
-          <!-- End row -->
-        </div>
         <!-- End container -->
       </div>
     </section>
     <!-- end kartu -->
-<div class="container">
+<div class="container rounded my-3">
   <div class="text-center">
-    <h1>Tentang Sekolah</h1>
+    <h1 class="text-uppercase">Tentang Sekolah</h1>
   </div>
     <div class="row my-2 align-items-center">
       <div class="col-3">
@@ -136,6 +136,11 @@
        <div class="font-monospace">
        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae fugiat exercitationem nihil voluptatum expedita praesentium pariatur eligendi placeat velit. Error, ut eveniet? Harum iusto officia ad aliquam saepe fugiat!</p>
       </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-3 mt-2">
+        <a href="index.php?page=guru" class="btn btn-primary w-100 text-center shadow">Baca Selengkapnya</a>
       </div>
     </div>
 </div>
