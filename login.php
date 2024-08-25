@@ -1,3 +1,35 @@
+<?php
+  include "controller/db_connect.php";
+  session_start();
+  $loginMessage = "";
+
+  if (isset($_SESSION['isLogin'])) {
+    header("location: index.php");
+  }
+
+  if (isset($_POST['Login'])) {
+    $nama = $_POST['username'];
+    $password = $_POST['password'];
+
+    // $hash_password = hash('sha256', $password);
+
+    $sql = "SELECT * FROM user WHERE username = '$nama' AND password = '$password'";
+
+    $hasil = $conn->query($sql);
+
+    if ($hasil->num_rows > 0 ) {
+      $data = $hasil->fetch_assoc();
+      $_SESSION['username'] = $data['username'];
+      $_SESSION['isLogin'] = true;
+
+      header("location: index.php");
+    } else {
+      $loginMessage = "Data tidak ditemukan";
+    }
+    $conn->close();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,26 +51,29 @@
 ">
           <div class="card-body">
             <h2 class="card-title text-center text-uppercase">Login</h2>
-            <form>
+            <i><?= $loginMessage ?></i>
+            <form action="login.php" method="POST">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
+                <label for="inputUser" class="form-label"
+                  >Username</label
                 >
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="inputUser"
+                  name="username"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
+                <label for="inputPassword" class="form-label"
                   >Password</label
                 >
                 <input
                   type="password"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="inputPassword"
+                  name="password"
                   required
                 />
               </div>
@@ -47,17 +82,8 @@
                 <label class="form-check-label" for="exampleCheck1">Allow Terms of Privacy</label>
               </div>
               <div class="d-flex justify-content-evenly">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" name="Login">
                   <i class="bi bi-box-arrow-in-right"></i> Login
-                </button>
-                <button type="submit" class="btn btn-success">
-                  <i class="bi bi-pencil-square"></i>
-                  <a
-                    href="register.html"
-                    target="_blank"
-                    class="text-decoration-none text-white"
-                    >Register</a
-                  >
                 </button>
               </div>
             </form>
