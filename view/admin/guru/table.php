@@ -12,7 +12,7 @@
     </div>
     <div class="card-body">
         <div class="my-2">
-            <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+            <a href="/web-sekolah/admin.php?page=guru-tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
         </div>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -20,21 +20,27 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
-                        <th>Address</th>
-                        <th>No Telp</th>
+                        <!-- <th>Address</th> -->
+                         <th>No Telp</th>
                         <th>Image</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+                $i = 1;
+                while ($guru = mysqli_fetch_assoc($query)) {
+                ?>
                     <tr>
-                        <td>1</td>
-                        <td>yourname</td>
-                        <td>Edinburgh</td>
-                        <td>Edinburgh</td>
-                        <td>Edinburgh</td>
-                        <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
+                        <td><?= $i++?></td>
+                        <td><?= $guru['nama_guru'] ?></td>
+                        <td><?= $guru['no_tlpn'] ?></td>
+                        <td><?= $guru['gambar'] ?></td>
+                        <td><a href="controller/artikel/delete_artikel.php?id_artikel=<?= $guru['id_artikel'] ?>">Hapus</a>  | <a href="controller/artikel/delete_artikel.php" class="btn btn-warning">Edit</a></td>
                     </tr>
+                    <?php
+                }
+                ?>
                 </tbody>
             </table>
         </div>
