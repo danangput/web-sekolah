@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 
     mysqli_query($conn, "INSERT INTO artikel(judul_artikel, tanggal, gambar, deskripsi) VALUES('$judul', '$tanggal', '$gambar','$deskripsi')");
 
-    header("location:/web-sekolah/admin.php?page=artikel");
+    header("location: /web-sekolah/admin.php?page=artikel");
 
 }else {
     echo "gagal input";

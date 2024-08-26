@@ -12,7 +12,7 @@
       </div>
       <div class="card-body">
           <div class="my-2">
-              <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+              <a href="/web-sekolah/admin.php?page=jurusan-tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
           </div>
           <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -32,10 +32,10 @@
                     ?>
                       <tr>
                           <td><?= $i++ ?></td>
-                          <td><?= $jurusan['nama_jurusan'] ?>System Architect</td>
-                          <td><?= $jurusan['gambar'] ?>Edinburgh</td>
-                          <td><?= $jurusan['deskripsi'] ?>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
-                          <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
+                          <td><?= $jurusan['nama_jurusan'] ?></td>
+                          <td><?= $jurusan['gambar'] ?></td>
+                          <td><?= $jurusan['deskripsi'] ?></td>
+                          <td><a href="controller/jurusan/delete_jurusan.php?id_jurusan=<?= $jurusan['id_jurusan'] ?>" class="btn btn-danger">Hapus</a> | <a href="/web-sekolah/admin.php?page=jurusan-edit&id_jurusan=<?= $jurusan['id_jurusan'] ?>" class="btn btn-warning">Edit</a></td>
                       </tr>
                       <?php
                         }

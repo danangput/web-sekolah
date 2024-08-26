@@ -25,9 +25,11 @@ switch ($page) {
         include "view/admin/jurusan/table.php";
         break;
     case 'jurusan-tambah':
+        // include "controller/jurusan/add_jurusan.php";
         include "view/admin/jurusan/tambah.php";
         break;
     case 'jurusan-edit':
+        include "controller/jurusan/edit_jurusan.php";
         include "view/admin/jurusan/edit.php";
         break;
     case 'guru':

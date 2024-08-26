@@ -3,7 +3,7 @@
 
   if (isset($_POST['submit'])) {
     $nama = $_POST['nama_jurusan'];
-    $gambar = $_POST['gambar'];
+    $gambar = "gambar.jpg";
     $deskripsi = $_POST['deskripsi'];
 
     $query = "INSERT INTO jurusan(nama_jurusan, gambar, deskripsi) VALUES ('$nama', '$gambar', '$deskripsi')";
