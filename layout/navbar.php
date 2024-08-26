@@ -22,9 +22,9 @@
                 <li>
                     <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=artikel">ARTIKEL</a>
                 </li>
-                <!-- <form action="login.php" method="POST">
+                <form action="login.php" method="POST">
             <button type="submit" name="Logout" class="btn btn-outline-primary">Logout</button>
-          </form> -->
+          </form>
             </ul>
         </div>
     </div>
