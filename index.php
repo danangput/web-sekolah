@@ -39,8 +39,8 @@ switch ($page) {
     case 'analis':
         include "view/detailjurusan/analis.php";
         break;
-    case 'logout':
-        include "view/untuklogout.php";
+    case 'login':
+        include "login.php";
         break;
 
     

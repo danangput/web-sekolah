@@ -1,11 +1,12 @@
 <?php
-  include "controller/db_connect.php";
-  session_start();
-  $loginMessage = "";
+    session_start();
 
-  if (isset($_SESSION['isLogin'])) {
-    header("location: index.php");
-  }
+    if(isset($_SESSION["isLogin"])) {
+        header('Location: admin.php');
+        exit;
+    }
+  include "controller/db_connect.php";
+
 
   if (isset($_POST['Login'])) {
     $nama = $_POST['username'];
@@ -22,7 +23,7 @@
       $_SESSION['username'] = $data['username'];
       $_SESSION['isLogin'] = true;
 
-      header("location: index.php");
+      header("location: admin.php");
     } else {
       $loginMessage = "Data tidak ditemukan";
     }
@@ -51,7 +52,7 @@
 ">
           <div class="card-body">
             <h2 class="card-title text-center text-uppercase">Login</h2>
-            <i><?= $loginMessage ?></i>
+
             <form action="login.php" method="POST">
               <div class="mb-3">
                 <label for="inputUser" class="form-label"

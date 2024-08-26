@@ -24,8 +24,8 @@
                 </li>
               </ul>
             </div>
-            <a href="http://localhost/web-sekolah/index.php?page=logout">
-            <button type="submit" name="Logout" class="btn btn-outline-primary">Logout</button>
+            <a href="http://localhost/web-sekolah/index.php?page=login">
+            <button type="submit" name="Logout" class="btn btn-outline-primary">Login</button>
             </a>
     </div>
     </div>
