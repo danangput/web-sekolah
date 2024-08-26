@@ -40,6 +40,7 @@ switch ($page) {
         include "view/admin/guru/tambah.php";
         break;
     case 'guru-edit':
+        include "controller/guru/edit_guru.php";
         include "view/admin/guru/edit.php";
         break;
     case 'prestasi':
