@@ -1,5 +1,5 @@
 <?php
-include("controller/db_connect.php");
+include __DIR__. "\\..\\db_connect.php";
 
 if(isset($_POST['submit'])){
     $judul = $_POST['judul_artikel'];
@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $gambar = "gambar.jpg";
     $deskripsi = $_POST['deskripsi'];
 
-    mysqli_query($conn, "INSERT INTO artikel(judul_artikel, tanggal, gambar, deskripsi) VALUES($judul, $tanggal, $gambar, $deskripsi)");
+    mysqli_query($conn, "INSERT INTO artikel(judul_artikel, tanggal, gambar, deskripsi) VALUES('$judul', '$tanggal', '$gambar','$deskripsi')");
 
     header("location:/web-sekolah/admin.php?page=artikel");
 
