@@ -37,7 +37,7 @@
                                 <td><?= $guru['nama_guru'] ?></td>
                                 <td><?= $guru['no_telp'] ?></td>
                                 <td><?= $guru['gambar_guru'] ?></td>
-                                <td><a href="controller/artikel/delete.php?id_guru=<?= $guru['id_guru'] ?>"
+                                <td><a href="controller/guru/delete_guru.php?id_guru=<?= $guru['id_guru'] ?>"
                                         class="btn btn-danger">Hapus</a> | <a class="btn btn-warning"
                                         href="/web-sekolah/admin.php?page=guru-edit&id_guru= <?= $guru['id_guru'] ?>">Edit</a>
                                 </td>

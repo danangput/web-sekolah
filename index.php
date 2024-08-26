@@ -39,8 +39,8 @@ switch ($page) {
     case 'analis':
         include "view/detailjurusan/analis.php";
         break;
-    
 
+    
 }
 
 include "layout/footer.php";

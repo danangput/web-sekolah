@@ -2,12 +2,12 @@
   include __DIR__. "\..\db_connect.php";
 
     $id = $_POST['id_guru'];
-    $nama = $_POST['nama'];
+    $nama = $_POST['nama_guru'];
     $alamat = $_POST['alamat'];
     $no_telp = $_POST ["no_telp"];
     $image ='image';
 
-    $query = "UPDATE guru SET nama_guru = '$nama', nama = '$alamat', alamat = '$no_telp', no_telp= '$image' WHERE id_guru = $id";
+    $query = "UPDATE guru SET nama_guru = '$nama', alamat= '$alamat', no_telp = '$no_telp', gambar_guru= '$image' WHERE id_guru = $id";
 
     
   $update = mysqli_query($conn, $query);
