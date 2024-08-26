@@ -31,7 +31,8 @@ switch ($page) {
         include "view/admin/jurusan/edit.php";
         break;
     case 'guru':
-        include "view/admin/guru/table.php";
+        include "controller/guru/tabel_guru.php";
+        include "view/admin/guru/tabel.php";
         break;
     case 'guru-tambah':
         include "view/admin/guru/tambah.php";
