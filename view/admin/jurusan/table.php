@@ -26,13 +26,20 @@
                       </tr>
                   </thead>
                   <tbody>
+                    <?php
+                        $i = 1;
+                        while ($jurusan = mysqli_fetch_assoc($query)) {
+                    ?>
                       <tr>
-                          <td>1</td>
-                          <td>System Architect</td>
-                          <td>Edinburgh</td>
-                          <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
+                          <td><?= $i++ ?></td>
+                          <td><?= $jurusan['nama_jurusan'] ?>System Architect</td>
+                          <td><?= $jurusan['gambar'] ?>Edinburgh</td>
+                          <td><?= $jurusan['deskripsi'] ?>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
                           <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
                       </tr>
+                      <?php
+                        }
+                    ?>
                   </tbody>
               </table>
           </div>
