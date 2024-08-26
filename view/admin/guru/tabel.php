@@ -34,9 +34,9 @@
                     <tr>
                         <td><?= $i++?></td>
                         <td><?= $guru['nama_guru'] ?></td>
-                        <td><?= $guru['no_tlpn'] ?></td>
-                        <td><?= $guru['gambar'] ?></td>
-                        <td><a href="controller/artikel/delete_artikel.php?id_artikel=<?= $guru['id_artikel'] ?>">Hapus</a>  | <a href="controller/artikel/delete_artikel.php" class="btn btn-warning">Edit</a></td>
+                        <td><?= $guru['no_telp'] ?></td>
+                        <td><?= $guru['gambar_guru'] ?></td>
+                        <td><a href="controller/artikel/delete_artikel.php?id_guru=<?= $guru['id_guru'] ?>"class="btn btn-danger">Hapus</a>  | <a href="controller/artikel/delete_artikel.php" class="btn btn-warning">Edit</a></td>
                     </tr>
                     <?php
                 }
