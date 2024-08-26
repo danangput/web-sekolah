@@ -1,5 +1,5 @@
 <?php
-include __DIR__. "\\..\\db_connect.php";
+include __DIR__. "\..\db_connect.php";
 
 if(isset($_POST['submit'])){
     $judul = $_POST['judul_artikel'];

@@ -33,7 +33,7 @@
                         <td><?= $i++?></td>
                         <td><?= $artikel['judul_artikel'] ?></td>
                         <td><?= $artikel['gambar'] ?></td>
-                        <td><a href="controller/artikel/delete_artikel.php?id_artikel=<?= $artikel['id_artikel']?>">Hapus</a>  | <a href="controller/artikel/delete_artikel.php" class="btn btn-warning">Edit</a></td>
+                        <td><a href="controller/artikel/delete_artikel.php?id_artikel=<?= $artikel['id_artikel'] ?>">Hapus</a>  | <a href="controller/artikel/delete_artikel.php" class="btn btn-warning">Edit</a></td>
                     </tr>
                     <?php
                 }
