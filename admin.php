@@ -44,12 +44,14 @@ switch ($page) {
         include "view/admin/guru/edit.php";
         break;
     case 'prestasi':
+        include "controller/prestasi/table_prestasi.php";
         include "view/admin/prestasi/table.php";
         break;
     case 'prestasi-tambah':
         include "view/admin/prestasi/tambah.php";
         break;
     case 'prestasi-edit':
+        include "controller/prestasi/edit_prestasi.php";
         include "view/admin/prestasi/edit.php";
         break;
 }
