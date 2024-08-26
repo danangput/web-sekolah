@@ -17,6 +17,7 @@ switch ($page) {
         include "view/admin/artikel/tambah.php";
         break;
     case 'artikel-edit':
+        include "controller/artikel/edit_artikel.php";
         include "view/admin/artikel/edit.php";
         break;
     case 'jurusan':

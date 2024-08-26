@@ -1,11 +1,3 @@
-<?php
-  include "controller/db_connect.php";
-
-  $id = $_GET['id_artikel'];
-  $query = "SELECT * FROM artikel WHERE id_artikel = $id";
-  $edit = mysqli_fetch_assoc(mysqli_query($conn, $query));
-?>
-
 <div class="container mt-5">
     <h2 class="h2 text-center">Edit</h2>
     <form action="controller/artikel/update_artikel.php" method="POST">
@@ -19,7 +11,7 @@
   </div>
   <div class="mb-3">
     <label for="inputImage">Image</label>
-    <input type="file" class="form-control-file" id="inputImage" name="gambar.jpg" value="<?= $edit['gambar.jpg'] ?>">
+    <input type="file" class="form-control-file" id="inputImage" name="gambar.jpg" value="<?= $edit['gambar'] ?>">
   </div>
   <div class="mb-3">
     <label for="inputDesc">Description</label>
