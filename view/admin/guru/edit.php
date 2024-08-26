@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2 class="h2 text-center">Edit</h2>
-    <form action="controller/artikel/edit_guru.php" method="POST" enctype="multipart/form-data">
+    <form action="controller/artikel/edit_guru.php" method="POST">
         <div class="mb-3">
             <label for="inputTitle" class="form-label">Name</label>
             <input type="text" class="form-control" id="inputTitle" name="nama_guru" value="<?= $edit['nama_guru'] ?>">
