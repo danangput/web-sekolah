@@ -27,14 +27,21 @@
                       </tr>
                   </thead>
                   <tbody>
+                    <?php
+                        $i = 1;
+                        while ($prestasi = mysqli_fetch_assoc($query)) {
+                    ?>
                       <tr>
-                          <td>1</td>
-                          <td>System Architect</td>
-                          <td>Edinburgh</td>
-                          <td>Edinburgh</td>
-                          <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, temporibus.</td>
-                          <td><a href="" class="btn btn-danger">Hapus</a> | <a href="" class="btn btn-warning">Edit</a></td>
+                          <td><?= $i++ ?></td>
+                          <td><?= $prestasi['nama'] ?>System Architect</td>
+                          <td><?= $prestasi['deskripsi'] ?>Edinburgh</td>
+                          <td><?= $prestasi['gambar'] ?>Edinburgh</td>
+                          <td><?= $prestasi['tanggal'] ?></td>
+                          <td><a href="controller/prestasi/delete_prestasi.php?id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-danger">Hapus</a> | <a href="/web-sekolah/admin.php?page=prestasi-edit&id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-warning">Edit</a></td>
                       </tr>
+                      <?php
+                        }
+                      ?>
                   </tbody>
               </table>
           </div>
