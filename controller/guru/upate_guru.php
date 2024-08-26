@@ -13,7 +13,7 @@
   $update = mysqli_query($conn, $query);
 
     if ($update) {
-        header("location: /web-sekolah/admin.php?page=artikel");
+        header("location: /web-sekolah/admin.php?page=guru");
       }
   
 ?>
