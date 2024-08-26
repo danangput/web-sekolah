@@ -48,6 +48,7 @@ switch ($page) {
         include "view/admin/prestasi/table.php";
         break;
     case 'prestasi-tambah':
+        include "controller/prestasi/add_prestasi.php";
         include "view/admin/prestasi/tambah.php";
         break;
     case 'prestasi-edit':

@@ -12,7 +12,7 @@
       </div>
       <div class="card-body">
           <div class="my-2">
-              <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+              <a href="/web-sekolah/admin.php?page=prestasi-tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
           </div>
           <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -33,9 +33,9 @@
                     ?>
                       <tr>
                           <td><?= $i++ ?></td>
-                          <td><?= $prestasi['nama'] ?>System Architect</td>
-                          <td><?= $prestasi['deskripsi'] ?>Edinburgh</td>
-                          <td><?= $prestasi['gambar'] ?>Edinburgh</td>
+                          <td><?= $prestasi['nama'] ?></td>
+                          <td><?= $prestasi['deskripsi'] ?></td>
+                          <td><?= $prestasi['gambar_prestasi'] ?></td>
                           <td><?= $prestasi['tanggal'] ?></td>
                           <td><a href="controller/prestasi/delete_prestasi.php?id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-danger">Hapus</a> | <a href="/web-sekolah/admin.php?page=prestasi-edit&id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-warning">Edit</a></td>
                       </tr>

@@ -5,9 +5,9 @@
     $nama = $_POST['nama'];
     $deskripsi = $_POST['deskripsi'];
     $gambar = "gambar.jpg";
-    $tanggal = "tanggal";
+    $tanggal = $_POST['tanggal'];
 
-    $query = "INSERT INTO prestasi(nama, deskripsi, gambar, tanggal) VALUES ('$nama', '$deskripsi', '$gambar', '$tanggal')";
+    $query = "INSERT INTO prestasi(nama, deskripsi, gambar_prestasi, tanggal) VALUES ('$nama', '$deskripsi', '$gambar', '$tanggal')";
 
     mysqli_query($conn, $query);
 
