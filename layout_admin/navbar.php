@@ -52,7 +52,7 @@
 <hr class="sidebar-divider my-0">
 
 <li class="nav-item my-3 d-flex justify-content-center">
-    <a class="btn btn-outline-danger text-white" href="/web-sekolah/index.php?page=logout">Logout</a>
+    <a class="btn btn-outline-danger text-white" href="/web-sekolah/admin.php?page=logout">Logout</a>
 </li>
 
 </ul>

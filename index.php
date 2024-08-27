@@ -40,12 +40,6 @@ switch ($page) {
     case 'analis':
         include "view/detailjurusan/analis.php";
         break;
-    case 'login':
-        include "login.php";
-        break;
-    case 'logout':
-        include "logout.php";
-        break;
 
     
 }
