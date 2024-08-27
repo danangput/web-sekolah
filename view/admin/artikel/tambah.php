@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2 class="h2 text-center">Tambah</h2>
-    <form action="controller/artikel/add_artikel.php" method="POST">
+    <form action="controller/artikel/add_artikel.php" method="POST" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="inputTitle" class="form-label">Title</label>
     <input type="text" class="form-control" id="inputTitle" name="judul_artikel">
@@ -11,7 +11,7 @@
   </div>
   <div class="mb-3">
     <label for="inputImage">Image</label>
-    <input type="file" class="form-control-file" id="inputImage">
+    <input type="file" class="form-control-file" id="inputImage" name="gambar">
   </div>
   <div class="mb-3">
     <label for="inputDesc">Description</label>
