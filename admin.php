@@ -35,6 +35,8 @@ switch ($page) {
     case 'artikel-store':
         include "controller/artikel/add_artikel.php";
         break;
+    case 'artikel-update':
+        include "controller/artikel/update_artikel.php";
     case 'jurusan':
         include "controller/jurusan/table_jurusan.php";
         include "view/admin/jurusan/table.php";

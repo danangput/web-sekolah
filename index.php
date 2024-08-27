@@ -20,6 +20,7 @@ switch ($page) {
         include "view/jurusan.php";
         break;
     case 'prestasi':
+        include "controller/prestasi/prestasi_client.php";
         include "view/prestasi.php";
         break;
     case 'guru':
