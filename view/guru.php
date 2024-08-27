@@ -5,48 +5,19 @@
             <h3 class="mb-3" style="text-shadow: 2px 2px 1px rgba(255, 255, 255, 1); font-size: 3rem">STRUKTUR GURU</h3>
         </div>
     </div>
+    <?php while ($guru = mysqli_fetch_assoc($query)){ ?>
     <div class="container">
         <div class="row mb-3 d-flex justify-content-center align-items-center">
             <div class="col-md-3">
-                <img src="public/img/kp.JPG" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250">
+                <img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250">
             </div>
             <div class="col-md-9">
-                <h5 class="text-uppercase">Kepala sekolah</h5>
-                <h6 class="text-uppercase">dr. Ir. Wachid, M.Pd.</h6>
+                <h5 class="text-uppercase"><?= $guru['nama_guru'] ?></h5>
+                <h6 class="text-uppercase"><?= $guru['alamat'] ?></h6>
+                <h6 class="text-uppercase"><?= $guru['no_telp'] ?></h6>
                 <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque a, dolor minus facere maxime nam quae omnis id dolorum ea, dolorem maiores quidem accusamus. Quam in consequuntur suscipit quae quod.</p>
             </div>
         </div>
-
-        <div class="row mb-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-9">
-            <h5 class="text-uppercase">Wakil kepala sekolah</h5>
-                <h6 class="text-uppercase">Sugiati cristopus, s.pd m.pd</h6>
-                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque a, dolor minus facere maxime nam quae omnis id dolorum ea, dolorem maiores quidem accusamus. Quam in consequuntur suscipit quae quod.</p>
-                </div>
-                <div class="col-md-3">
-                <img src="public/img/guru1.jpg" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250"> 
-            </div>
-        </div> 
-
-        <div class="row mb-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-3">
-                <img src="public/img/guru2.jpg" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250">
-            </div>
-            <div class="col-md-9">
-                <h5 class="text-uppercase">koordinator tata usaha</h5>
-                <h6 class="text-uppercase">melkanius vrensocus s.si m.pd</h6>
-                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque a, dolor minus facere maxime nam quae omnis id dolorum ea, dolorem maiores quidem accusamus. Quam in consequuntur suscipit quae quod.</p>
-            </div>
-        </div> 
-        <div class="row mb-3 d-flex justify-content-center align-items-center">
-            <div class="col-md-9">
-            <h5 class="text-uppercase">waka kurikulum</h5>
-                <h6 class="text-uppercase">subarno krestus, se m.pd</h6>
-                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque a, dolor minus facere maxime nam quae omnis id dolorum ea, dolorem maiores quidem accusamus. Quam in consequuntur suscipit quae quod.</p>
-                </div>
-                <div class="col-md-3">
-                <img src="public/img/guru3.jpg" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250"> 
-            </div>
-        </div>
+<?php } ?>
     </div>
 </div>
