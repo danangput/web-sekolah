@@ -36,26 +36,61 @@
 <!-- <nav class="navbar navbar-expand-lg">
     <div class="container-fluid fixed-top" style="background-color: #e3f2fd; margin-bottom:300px;">
         <a class="navbar-brand" href="#">
-            <img src="public/img/logo.png" alt="Bootstrap" width="70" height="70">
+            <img src="" >
         </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active fw-bold " aria-current="page"
-                        href="/web-sekolah/index.php?page=home">HOME</a>
+                        href="">HOME</a>
                 </li>
+
+
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="http://localhost/web-sekolah/index.php?page=visi_misi">VISI DAN
+                    <a class="nav-link fw-bold" href="">VISI DAN
                         MISI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=jurusan">JURUSAN</a>
+                    <a class="nav-link fw-bold" href="">JURUSAN</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=prestasi">PRESTASI</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="">ARTIKEL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://localhost">
+                        
+                </li>
+                        
+            </ul>
+        </div>
+    </div>
+</nav>
+ -->
+
+<!-- <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid fixed-top" style="background-color: #e3f2fd; margin-bottom:300px;">
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                
+                
+                <li class="nav-item">
+                    
+                </li>
                 <li>
-                    <a class="nav-link fw-bold" href="/web-sekolah/index.php?page=artikel">ARTIKEL</a>
+                    
+                </li>
+                <li>
+                    
                 </li>
               </ul>
             </div>

@@ -85,6 +85,12 @@ switch ($page) {
     case 'dashboard':
         include "dashboard.php";
         break;
+    case 'login':
+        include "login.php";
+        break;
+    case 'logout':
+        include "logout.php";
+        break;
 
 }
 
