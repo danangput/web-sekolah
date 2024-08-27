@@ -66,9 +66,7 @@ switch ($page) {
         include "controller/prestasi/edit_prestasi.php";
         include "view/admin/prestasi/edit.php";
         break;
-    case 'logout':
-        include "logout.php";
-        break;
+
 }
 
 include "layout_admin/footer.php";

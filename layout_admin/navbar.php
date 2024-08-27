@@ -83,7 +83,7 @@
 </svg>
         <span>Prestasi</span>
     </a>
-    <a href="http://localhost/web-sekolah/admin.php?page=logout">
+    <a href="http://localhost/web-sekolah/index.php?page=logout">
     <button type="button" class="btn btn-danger">logout</button>
             </a>
 </li>
