@@ -1,6 +1,17 @@
 <?php
+
+
+session_start();
+
+if(!isset($_SESSION["isLogin"])) {
+    header('Location: login.php');
+    exit;
+}
+
 include "layout_admin/header.php";
 include "layout_admin/navbar.php";
+
+
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -54,6 +65,9 @@ switch ($page) {
     case 'prestasi-edit':
         include "controller/prestasi/edit_prestasi.php";
         include "view/admin/prestasi/edit.php";
+        break;
+    case 'logout':
+        include "logout.php";
         break;
 }
 

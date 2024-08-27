@@ -25,7 +25,7 @@
 
       header("location: admin.php");
     } else {
-      $loginMessage = "Data tidak ditemukan";
+      $loginMessage = true;
     }
     $conn->close();
   }
@@ -54,6 +54,10 @@
             <h2 class="card-title text-center text-uppercase">Login</h2>
 
             <form action="login.php" method="POST">
+            <?php 
+        if(isset($loginMessage)) : ?>
+            <p>Username atau Password yang anda masukkan salah!</p>
+        <?php endif; ?>
               <div class="mb-3">
                 <label for="inputUser" class="form-label"
                   >Username</label
