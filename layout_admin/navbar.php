@@ -83,11 +83,9 @@
 </svg>
         <span>Prestasi</span>
     </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-        </div>
-    </div>
+    <a href="http://localhost/web-sekolah/index.php?page=logout">
+    <button type="button" class="btn btn-danger">logout</button>
+            </a>
 </li>
 
 <!-- Divider -->

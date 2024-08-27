@@ -42,6 +42,9 @@ switch ($page) {
     case 'login':
         include "login.php";
         break;
+    case 'logout':
+        include "logout.php";
+        break;
 
     
 }

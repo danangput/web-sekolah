@@ -1,6 +1,17 @@
 <?php
+
+
+session_start();
+
+if(!isset($_SESSION["isLogin"])) {
+    header('Location: login.php');
+    exit;
+}
+
 include "layout_admin/header.php";
 include "layout_admin/navbar.php";
+
+
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -58,6 +69,7 @@ switch ($page) {
     case 'dashboard':
         include "dashboard.php";
         break;
+
 }
 
 include "layout_admin/footer.php";
