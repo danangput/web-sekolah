@@ -12,7 +12,7 @@
         </div>
         <div class="card-body">
             <div class="my-2">
-                <a href="/web-sekolah/admin.php?page=guru-tambah" class="btn btn-primary"><i class="fas fa-plus"></i>
+                <a href="/web-sekolah/admin.php?page=guru-create" class="btn btn-primary"><i class="fas fa-plus"></i>
                     Tambah</a>
             </div>
             <div class="table-responsive">
@@ -36,7 +36,7 @@
                                 <td><?= $i++ ?></td>
                                 <td><?= $guru['nama_guru'] ?></td>
                                 <td><?= $guru['no_telp'] ?></td>
-                                <td><?= $guru['gambar_guru'] ?></td>
+                                <td><img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" class="img-fluid"  style="width: 200px; height: 200px"></td>
                                 <td><a href="controller/guru/delete_guru.php?id_guru=<?= $guru['id_guru'] ?>"
                                         class="btn btn-danger">Hapus</a> | <a class="btn btn-warning"
                                         href="/web-sekolah/admin.php?page=guru-edit&id_guru= <?= $guru['id_guru'] ?>">Edit</a>

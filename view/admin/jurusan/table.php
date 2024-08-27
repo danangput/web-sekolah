@@ -12,7 +12,7 @@
       </div>
       <div class="card-body">
           <div class="my-2">
-              <a href="/web-sekolah/admin.php?page=jurusan-tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+              <a href="/web-sekolah/admin.php?page=jurusan-create" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
           </div>
           <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -33,7 +33,7 @@
                       <tr>
                           <td><?= $i++ ?></td>
                           <td><?= $jurusan['nama_jurusan'] ?></td>
-                          <td><?= $jurusan['gambar'] ?></td>
+                          <td><img src="public/img/jurusan/<?= $jurusan['gambar'] ?>" alt="" class="img-fluid" style="width: 200px; height: 200px"></td>
                           <td><?= $jurusan['deskripsi'] ?></td>
                           <td><a href="controller/jurusan/delete_jurusan.php?id_jurusan=<?= $jurusan['id_jurusan'] ?>" class="btn btn-danger">Hapus</a> | <a href="/web-sekolah/admin.php?page=jurusan-edit&id_jurusan=<?= $jurusan['id_jurusan'] ?>" class="btn btn-warning">Edit</a></td>
                       </tr>
