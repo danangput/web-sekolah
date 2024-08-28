@@ -45,7 +45,7 @@ CREATE TABLE `guru` (
   `id_guru` int NOT NULL,
   `nama_guru` varchar(100) NOT NULL,
   `alamat` varchar(100) NOT NULL,
-  `no_telp` int NOT NULL,
+  `no_telp` varchar(100) NOT NULL,
   `gambar_guru` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
