@@ -31,18 +31,18 @@
                         <?php
                         $i = 1;
                         while ($guru = mysqli_fetch_assoc($query)) {
-                            ?>
+                        ?>
                             <tr>
                                 <td><?= $i++ ?></td>
                                 <td><?= $guru['nama_guru'] ?></td>
                                 <td><?= $guru['no_telp'] ?></td>
-                                <td><img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" class="img-fluid"  style="width: 200px; height: 200px"></td>
+                                <td><img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" class="img-fluid" style="width: 200px; height: 200px"></td>
                                 <td><a href="controller/guru/delete_guru.php?id_guru=<?= $guru['id_guru'] ?>"
-                                        class="btn btn-danger">Hapus</a> | <a class="btn btn-warning"
+                                        class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a class="btn btn-warning"
                                         href="/web-sekolah/admin.php?page=guru-edit&id_guru= <?= $guru['id_guru'] ?>">Edit</a>
                                 </td>
                             </tr>
-                            <?php
+                        <?php
                         }
                         ?>
                     </tbody>
