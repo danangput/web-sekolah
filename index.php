@@ -12,12 +12,20 @@ switch ($page) {
     case 'home':
         include "view/home.php";
         break;
+    case 'home-jurusan':
+        include "controller/jurusan/home.php";
+        include "view/home.php";
+        break;
     case 'visi_misi':
         include "view/visi_misi.php";
         break;
     case 'jurusan':
         include "controller/jurusan/table_jurusan.php";
         include "view/jurusan.php";
+        break;
+    case 'detail-jurusan':
+        include "controller/jurusan/detail_jurusan.php";
+        include "view/detail_jurusan.php";
         break;
     case 'prestasi':
         include "controller/prestasi/prestasi_client.php";
@@ -32,16 +40,8 @@ switch ($page) {
         include "view/artikel.php";
         break;
     case 'show_artikel':
+        include "controller/artikel/detail_artikel.php";
         include "view/show_artikel.php";
-        break;
-    case 'infor':
-        include "view/detailjurusan/infor.php";
-        break;
-    case 'machine':
-        include "view/detailjurusan/machine.php";
-        break;
-    case 'analis':
-        include "view/detailjurusan/analis.php";
         break;
     case 'login':
         include "login.php";

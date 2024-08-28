@@ -20,7 +20,7 @@
                         <div class="g-col-6"><br><br><br>
                             <p class="p"><?= $jurusan['deskripsi'] ?>
                             </p>
-                            <a href="/web-sekolah/index.php?page=infor"><button type="button"
+                            <a href="/web-sekolah/index.php?page=detail-jurusan&id_jurusan=<?= $jurusan ['id_jurusan'] ?>"> <button type="button"
                                     class="btn btn-outline-primary">Lihat Detail Jurusan</button></a>
                         </div>
                     </div>

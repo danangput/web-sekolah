@@ -46,15 +46,16 @@
       <div class="container mb-2 mt-2">
       <h1 class="text-center mb-5">JURUSAN</h1>
           <!-- Start row -->
+         <?php while ($home = mysqli_fetch_assoc($home_jurusan)) { ?>
           <div class="row">
             <!-- Start col ke 1 -->
             <div class="col-4 d-flex justify-content-center">
               <div class="card shadow" style="width: 18rem">
-                <img src="public/img/coding.png" class="card-img-top" alt="..." />
+                <img src="public/img/jurusan/" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Informatika</h5>
+                  <h5 class="card-title">.</h5>
                   <p class="card-text text-truncate">
-                    Informatika adalah bidang studi yang mempelajari pengembangan dan penerapan teknologi informasi, sistem komputer, dan perangkat lunak.
+                  .
                   </p>
                   <a href="/web-sekolah/index.php?page=infor" class="btn btn-primary">Baca Selanjutnya 
                     <i class="bi bi-box-arrow-right"></i>
@@ -63,6 +64,8 @@
               </div>
               <!-- End col ke 1 -->
             </div>
+            <?php } ?>
+
             <!-- Start col ke 2 -->
             <div class="col-4 d-flex justify-content-center">
               <div class="card shadow" style="width: 18rem">
