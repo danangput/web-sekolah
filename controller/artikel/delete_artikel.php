@@ -10,4 +10,6 @@ unlink("/public/img/artikel/" . $result['gambar']);
 
 $query = "DELETE FROM artikel WHERE id_artikel = '$id';";
 $result = mysqli_query($conn, $query);
+
+
 header("location:/web-sekolah/admin.php?page=artikel");

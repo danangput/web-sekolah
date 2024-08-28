@@ -1,17 +1,14 @@
 <?php
-
-
+define('SECURITY_CHECK', true);
 session_start();
 
-if(!isset($_SESSION["isLogin"])) {
+if (!isset($_SESSION["isLogin"])) {
     header('Location: login.php');
     exit;
 }
 
 include "layout_admin/header.php";
 include "layout_admin/navbar.php";
-
-
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];

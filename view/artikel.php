@@ -15,7 +15,7 @@
             
             <h2><?= $artikel['judul_artikel'] ?></h2>
             <p class="text-muted"><?= $artikel['tanggal'] ?></p>
-            <p> <?= $artikel['deskripsi'] ?> <a href="http://localhost/web-sekolah/index.php?page=show_artikel">Baca Selengkapnya..</a></p>
+            <p> <?= $artikel['deskripsi'] ?> <a href="http://localhost/web-sekolah/index.php?page=show_artikel&id_artikel=<?= $artikel ['id_artikel'] ?>">Baca Selengkapnya..</a></p>
         </div>
     </div>
 
