@@ -1,17 +1,14 @@
 <?php
-
-
+define('SECURITY_CHECK', true);
 session_start();
 
-if(!isset($_SESSION["isLogin"])) {
+if (!isset($_SESSION["isLogin"])) {
     header('Location: login.php');
     exit;
 }
 
 include "layout_admin/header.php";
 include "layout_admin/navbar.php";
-
-
 
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -84,6 +81,12 @@ switch ($page) {
         break;
     case 'dashboard':
         include "dashboard.php";
+        break;
+    case 'Login':
+        include "login.php";
+        break;
+    case 'logout':
+        include "logout.php";
         break;
 
 }

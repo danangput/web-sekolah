@@ -1,4 +1,5 @@
 <?php
+define('SECURITY_CHECK', true);
 include "layout/header.php";
 include "layout/navbar.php";
 
@@ -50,7 +51,7 @@ switch ($page) {
         include "logout.php";
         break;
 
-    
+
 }
 
 include "layout/footer.php";
