@@ -86,7 +86,7 @@
   <?php
   $no = 1;
   while ($guru = mysqli_fetch_assoc($home_guru)) { ?>
-    <?php if ($no == 1) { ?>
+    <?php if ($no % 2 == 1) { ?>
       <div class="row my-2 align-items-center">
         <div class="col-3">
           <img class="img-fluid rounded-circle" src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" srcset=""
