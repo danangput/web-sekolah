@@ -38,7 +38,7 @@
                                   <td><img src="public/img/prestasi/<?= $prestasi['gambar_prestasi'] ?>" alt="" class="img-fluid" style="width: 200px; height: 200px">
                                   </td>
                                   <td><?= $prestasi['tanggal'] ?></td>
-                                  <td><a href="controller/prestasi/delete_prestasi.php?id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a href="/web-sekolah/admin.php?page=prestasi-edit&id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-warning">Edit</a></td>
+                                  <td><a href="?page=prestasi-destroy&id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a href="/web-sekolah/admin.php?page=prestasi-edit&id_prestasi=<?= $prestasi['id_prestasi'] ?>" class="btn btn-warning">Edit</a></td>
                               </tr>
                           <?php
                             }
