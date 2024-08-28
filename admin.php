@@ -89,6 +89,9 @@ switch ($page) {
     case 'prestasi-store':
         include "controller/prestasi/add_prestasi.php";
         break;
+    case 'prestasi-destroy':
+        include "controller/prestasi/delete_prestasi.php";
+        break;
     case 'dashboard':
         include "dashboard.php";
         break;
