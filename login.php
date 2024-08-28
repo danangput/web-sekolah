@@ -43,26 +43,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
-<body class="bg-secondary">
-    <div class="container">
+<body style="background-image: url('public/img/bgLogin.jpeg'); background-size: cover; background-repeat: no-repeat;">
+    <div class="container" style="letter-spacing: 1.5px">
         <div class="d-flex align-items-center justify-content-center min-vh-100">
-            <div class="card border border-primary" style="width: 50rem; padding: 5rem;
-       background: hsla(01988, 100%, 50%, 0.3)
+            <div class="card border border-danger border-3" style="width: 50rem; padding: 5rem;
+       background: rgba(128, 128, 128, 0.5)
 ">
                 <div class="card-body">
-                    <a href="http://localhost/web-sekolah/index.php?page=home">
-                        <button type="button" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
-                            </svg></button>
-                    </a>
-
                     <h2 class="card-title text-center text-uppercase">Login</h2>
 
                     <form action="login.php" method="POST">
                         <?php 
-        if(isset($loginMessage)) : ?>
+                    if(isset($loginMessage)) : ?>
                         <p>Username atau Password yang anda masukkan salah!</p>
                         <?php endif; ?>
                         <div class="mb-3">
@@ -77,9 +69,12 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Allow Terms of Privacy</label>
                         </div>
-                        <div class="d-flex justify-content-evenly">
-                            <button type="submit" class="btn btn-primary" name="Login">
-                                <i class="bi bi-box-arrow-in-right"></i> Login
+                        <div class="d-flex justify-content-center gap-5">
+                        <a href="http://localhost/web-sekolah/index.php?page=home" style="letter-spacing: 1.5px" class="btn btn-success">
+                        <i class="bi bi-house-door" style="margin-right: 2px"></i>Home
+                            </a>
+                            <button type="submit" class="btn btn-primary" name="Login" style="letter-spacing: 1.5px">
+                                <i class="bi bi-box-arrow-in-right" style="margin-right: 2px"></i> Login
                             </button>
                         </div>
                     </form>
