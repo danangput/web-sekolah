@@ -14,7 +14,11 @@
         <div class="col-md-9">
             
             <h2><?= $artikel['judul_artikel'] ?></h2>
-            <p class="text-muted"><?= $artikel['tanggal'] ?></p>
+            <p class="text-muted"><?php
+            $date = new DateTime($artikel['tanggal']);
+            $formatter = new IntlDateFormatter('id_ID', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+            echo $formatter->format($date);
+            ?></p>
             <p> <?= $artikel['deskripsi'] ?> <a href="http://localhost/web-sekolah/index.php?page=show_artikel&id_artikel=<?= $artikel ['id_artikel'] ?>">Baca Selengkapnya..</a></p>
         </div>
     </div>

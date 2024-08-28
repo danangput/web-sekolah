@@ -13,17 +13,14 @@
                 <div class="card-body">
                     <h5 class="card-title"><?= $prestasi['nama'] ?></h5>
                     <p class="card-text"><?= $prestasi['deskripsi'] ?></p>
-                    <p class="card-text"><small class="text-muted"><?php $prestasi['tanggal'] ?>
-                
-                    <?php
-setlocale(LC_TIME, 'id_ID'); // Mengatur locale ke Indonesia
-$date = $prestasi ['tanggal'];
+                    <p class="text-muted"><?php
+            $date = new DateTime($prestasi['tanggal']);
+            $formatter = new IntlDateFormatter('id_ID', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+            echo $formatter->format($date);
+            ?></p>
 
-// Mengubah format tanggal
-$formattedDate = strftime("%d %B %Y", strtotime($date));
 
-echo $formattedDate;
-?>
+
                 
                 </small></p>
                 </div>
