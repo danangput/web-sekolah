@@ -9,7 +9,7 @@
         </header>
 
         <div class="article-content">
-            <p><?= $detail_artikel['deskripsi'] ?> </p>
+            <p style="text-align: justify;"><?= $detail_artikel['deskripsi'] ?> </p>
         </div>
     </article>
 </div>

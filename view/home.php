@@ -93,10 +93,10 @@
             style="height: 250px;">
         </div>
         <div class="col-9">
-          <h2><?= $guru['nama_guru'] ?></h2>
+          <h2>Nama : <?= $guru['nama_guru'] ?></h2>
           <div class="font-monospace">
-            <h6 class="text-uppercase"><?= $guru['alamat'] ?></h6>
-            <h6 class="text-uppercase"><?= $guru['no_telp'] ?></h6>
+            <h6 class="text-uppercase">Alamat : <?= $guru['alamat'] ?></h6>
+            <h6 class="text-uppercase">No tlpn : <?= $guru['no_telp'] ?></h6>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et repudiandae odio. Enim alias
               obcaecati nisi vel veniam reprehenderit voluptate, minima aliquid aspernatur minus expedita ullam esse aperiam
               earum asperiores.</p>
@@ -106,10 +106,10 @@
     <?php } else { ?>
       <div class="row my-2 align-items-center">
         <div class="col-9 text-end">
-          <h2><?= $guru['nama_guru'] ?></h2>
+          <h2>Nama :<?= $guru['nama_guru'] ?></h2>
           <div class="font-monospace">
-            <p><?= $guru['alamat'] ?></p>
-            <p><?= $guru['no_telp'] ?></p>
+            <p>Alamat : <?= $guru['alamat'] ?></p>
+            <p>No tlpn :<?= $guru['no_telp'] ?></p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat enim dicta at doloremque deserunt inventore
               corporis assumenda consectetur hic, error amet expedita, consequatur adipisci, nesciunt animi nobis numquam?
             </p>
