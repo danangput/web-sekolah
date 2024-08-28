@@ -13,7 +13,16 @@
                 <div class="card-body">
                     <h5 class="card-title"><?= $prestasi['nama'] ?></h5>
                     <p class="card-text"><?= $prestasi['deskripsi'] ?></p>
-                    <p class="card-text"><small class="text-muted"><?= $prestasi['tanggal'] ?></small></p>
+                    <p class="text-muted"><?php
+            $date = new DateTime($prestasi['tanggal']);
+            $formatter = new IntlDateFormatter('id_ID', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+            echo $formatter->format($date);
+            ?></p>
+
+
+
+                
+                </small></p>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
         </header>
 
         <div class="article-content">
-            <p><?= $jurusan['deskripsi'] ?>.</p>
+            <p style="text-align: justify;"><?= $jurusan['deskripsi'] ?>.</p>
         </div>
     </article>
 </div>

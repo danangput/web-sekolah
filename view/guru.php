@@ -12,9 +12,9 @@
                 <img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" srcset="" class="img-fluid rounded-circle shadow" width="250">
             </div>
             <div class="col-md-9">
-                <h5 class="text-uppercase"><?= $guru['nama_guru'] ?></h5>
-                <h6 class="text-uppercase"><?= $guru['alamat'] ?></h6>
-                <h6 class="text-uppercase"><?= $guru['no_telp'] ?></h6>
+                <h5 class="text-uppercase">Nama : <?= $guru['nama_guru'] ?></h5>
+                <h6 class="text-uppercase">Alamat : <?= $guru['alamat'] ?></h6>
+                <h6 class="text-uppercase">No Tlpn : <?= $guru['no_telp'] ?></h6>
                 <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque a, dolor minus facere maxime nam quae omnis id dolorum ea, dolorem maiores quidem accusamus. Quam in consequuntur suscipit quae quod.</p>
             </div>
         </div>
