@@ -21,15 +21,15 @@
                 <li class="nav-item">
                     <a class="nav-link text-uppercase fw-bold" href="/web-sekolah/index.php?page=prestasi">Prestasi</a>
                 </li>
-                <li class="nav-item" style="margin-right: 77rem">
+                <li class="nav-item">
                     <a class="nav-link text-uppercase fw-bold" href="/web-sekolah/index.php?page=artikel">Artikel</a>
                 </li>
-                <li class="nav-item">
-                    <a href="http://localhost/web-sekolah/admin.php?page=login">
-                        <button type="submit" name="Login" class="btn btn-outline-primary">Login</button>
-                    </a>
-                </li>
             </ul>
+            <span class="ms-auto">
+                <a href="http://localhost/web-sekolah/admin.php?page=login">
+                    <button type="submit" name="Login" class="btn btn-outline-primary">Login</button>
+                </a>
+            </span>
         </div>
     </div>
 </nav>
