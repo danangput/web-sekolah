@@ -11,7 +11,7 @@ if (isset($_GET['page'])) {
 
 switch ($page) {
     case 'home':
-        include "controller/jurusan/home.php";
+        include "controller/home.php";
         include "view/home.php";
         break;
     case 'visi_misi':

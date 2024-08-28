@@ -55,13 +55,13 @@
       <?php while ($home = mysqli_fetch_assoc($home_jurusan)) { ?>
         <div class="col-4 d-flex justify-content-center">
           <div class="card shadow" style="width: 18rem">
-            <img src="public/img/jurusan/" class="card-img-top" alt="..." />
+            <img src="public/img/jurusan/<?= $home['gambar'] ?>" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">.</h5>
+              <h5 class="card-title"><?= $home['nama_jurusan'] ?></h5>
               <p class="card-text text-truncate">
-                .
+              <?= $home['deskripsi'] ?>
               </p>
-              <a href="/web-sekolah/index.php?page=infor" class="btn btn-primary">Baca Selanjutnya
+              <a href="/web-sekolah/index.php?page=detail-jurusan&id_jurusan=<?= $home ['id_jurusan'] ?>" class="btn btn-primary">Baca Selanjutnya
                 <i class="bi bi-box-arrow-right"></i>
               </a>
             </div>
@@ -70,39 +70,7 @@
         </div>
       <?php } ?>
 
-      <!-- Start col ke 2 -->
-      <div class="col-4 d-flex justify-content-center">
-        <div class="card shadow" style="width: 18rem">
-          <img src="public/img/ml.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Mesin Learning</h5>
-            <p class="card-text text-truncate">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="/web-sekolah/index.php?page=machine" class="btn btn-primary">Baca selanjutnya
-              <i class="bi bi-box-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        <!-- End col ke 2 -->
-      </div>
-      <!-- Start col ke 3 -->
-      <div class="col-4 d-flex justify-content-center">
-        <div class="card shadow" style="width: 18rem">
-          <img src="public/img/analis.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Data analis</h5>
-            <p class="card-text text-truncate">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-            <a href="/web-sekolah/index.php?page=analis" class="btn btn-primary">Baca Selanjutnya
-              <i class="bi bi-box-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        <!-- End col ke 3 -->
+      
       </div>
       <!-- End row -->
     </div>
@@ -114,50 +82,19 @@
   <div class="text-center">
     <h1 class="text-uppercase">Tentang Sekolah</h1>
   </div>
+  <?php while ($guru = mysqli_fetch_assoc($home_guru)) { ?>
   <div class="row my-2 align-items-center">
     <div class="col-3">
-      <img class="img-fluid rounded-circle" src="public/img/kp.JPG" alt="" srcset="" style="height: 250px;">
+    <img src="public/img/guru/<?= $guru['gambar_guru'] ?>" alt="" srcset="" style="height: 250px;">
     </div>
     <div class="col-9">
-      <h2> KEPALA SEKOLAH</h2>
+      <h2><?= $guru['nama_guru'] ?></h2>
       <div class="font-monospace">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae fugiat exercitationem nihil voluptatum
-          expedita praesentium pariatur eligendi placeat velit. Error, ut eveniet? Harum iusto officia ad aliquam saepe
-          fugiat!</p>
+      <h6 class="text-uppercase"><?= $guru['alamat'] ?></h6>
+      <h6 class="text-uppercase"><?= $guru['no_telp'] ?></h6>
       </div>
     </div>
-  </div>
-  <div class="row my-2 align-items-center">
-    <div class="col-9 text-end">
-      <h2> GURU SEKOLAH</h2>
-      <div class="font-monospace">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae fugiat exercitationem nihil voluptatum
-          expedita praesentium pariatur eligendi placeat velit. Error, ut eveniet? Harum iusto officia ad aliquam saepe
-          fugiat!</p>
-      </div>
-    </div>
-    <div class="col-3">
-      <img class="img-fluid rounded-circle" src="public/img/guruN.jpg" alt="" srcset="" style="height: 250px;">
-    </div>
-  </div>
-  <div class="row my-2 align-items-center">
-    <div class="col-3">
-      <img class="img-fluid rounded-circle" src="public/img/almuni.jpg" alt="" srcset="" style="height: 250px;">
-    </div>
-    <div class="col-9">
-      <h2> ALUMNI</h2>
-      <div class="font-monospace">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae fugiat exercitationem nihil voluptatum
-          expedita praesentium pariatur eligendi placeat velit. Error, ut eveniet? Harum iusto officia ad aliquam saepe
-          fugiat!</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 mb-3 mt-2">
-      <a href="index.php?page=guru" class="btn btn-primary w-100 text-center shadow">Baca Selengkapnya</a>
-    </div>
-  </div>
+    <?php } ?>
 </div>
 <!-- feature lainya ada di sini -->
 
