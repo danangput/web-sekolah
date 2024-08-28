@@ -12,7 +12,8 @@
         </div>
         <div class="card-body">
             <div class="my-2">
-                <a href="/web-sekolah/admin.php?page=artikel-create" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
+                <a href="/web-sekolah/admin.php?page=artikel-create" class="btn btn-primary"><i class="fas fa-plus"></i>
+                    Tambah</a>
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -28,14 +29,19 @@
                         <?php
                         $i = 1;
                         while ($artikel = mysqli_fetch_assoc($query)) {
-                        ?>
+                            ?>
                             <tr>
                                 <td><?= $i++ ?></td>
                                 <td><?= $artikel['judul_artikel'] ?></td>
-                                <td><img src="public/img/artikel/<?= $artikel['gambar'] ?>" alt="" class="img-fluid" style="width: 200px; height: 200px"></td>
-                                <td><a href="controller/artikel/delete_artikel.php?id_artikel=<?= $artikel['id_artikel'] ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a href="/web-sekolah/admin.php?page=artikel-edit&id_artikel=<?= $artikel['id_artikel'] ?>" class="btn btn-warning">Edit</a></td>
+                                <td><img src="public/img/artikel/<?= $artikel['gambar'] ?>" alt="" class="img-fluid"
+                                        style="width: 200px; height: 200px"></td>
+                                <td><a href="?page=artikel-destroy&id_artikel=<?= $artikel['id_artikel'] ?>"
+                                        class="btn btn-danger"
+                                        onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a
+                                        href="/web-sekolah/admin.php?page=artikel-edit&id_artikel=<?= $artikel['id_artikel'] ?>"
+                                        class="btn btn-warning">Edit</a></td>
                             </tr>
-                        <?php
+                            <?php
                         }
                         ?>
                     </tbody>

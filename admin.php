@@ -34,6 +34,10 @@ switch ($page) {
         break;
     case 'artikel-update':
         include "controller/artikel/update_artikel.php";
+        break;
+    case 'artikel-destroy':
+        include "controller/artikel/delete_artikel.php";
+        break;
     case 'jurusan':
         include "controller/jurusan/table_jurusan.php";
         include "view/admin/jurusan/table.php";
@@ -48,6 +52,9 @@ switch ($page) {
         break;
     case 'jurusan-store':
         include "controller/jurusan/add_jurusan.php";
+        break;
+    case 'jurusan-destroy':
+        include "controller/jurusan/delete_jurusan.php";
         break;
     case 'guru':
         include "controller/guru/table_guru.php";
