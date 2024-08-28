@@ -71,6 +71,9 @@ switch ($page) {
     case 'guru-store':
         include "controller/guru/add_guru.php";
         break;
+    case 'guru-destroy':
+        include "controller/guru/delete_guru.php";
+        break;
     case 'prestasi':
         include "controller/prestasi/table_prestasi.php";
         include "view/admin/prestasi/table.php";
@@ -95,9 +98,6 @@ switch ($page) {
     case 'logout':
         include "logout.php";
         break;
-
 }
 
 include "layout_admin/footer.php";
-
-?>

@@ -6,8 +6,8 @@
       <input type="text" class="form-control" id="inputTitle" name="nama">
     </div>
     <div class="mb-3">
-      <label for="inputAddress" class="form-label">Address</label><br>
-      <input type="text" id="inputAddress" name="alamat">
+      <label for="inputAddress" class="form-label">Address</label>
+      <textarea class="form-control" id="inputAddress" rows="3" required name="alamat"></textarea>
     </div>
     <div class="mb-3">
       <label for="inputNotelp">No Telp</label>
