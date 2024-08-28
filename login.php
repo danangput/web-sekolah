@@ -1,14 +1,15 @@
 <?php
-    session_start();
+define('SECURITY_CHECK', true);
+session_start();
 
-    if(isset($_SESSION["isLogin"])) {
-        header('Location: admin.php');
-        exit;
-    }
-  include "controller/db_connect.php";
+if (isset($_SESSION["isLogin"])) {
+    header('Location: admin.php');
+    exit;
+}
+include "controller/db_connect.php";
 
 
-  if (isset($_POST['Login'])) {
+if (isset($_POST['Login'])) {
     $nama = $_POST['username'];
     $password = $_POST['password'];
 
@@ -18,17 +19,17 @@
 
     $hasil = $conn->query($sql);
 
-    if ($hasil->num_rows > 0 ) {
-      $data = $hasil->fetch_assoc();
-      $_SESSION['username'] = $data['username'];
-      $_SESSION['isLogin'] = true;
+    if ($hasil->num_rows > 0) {
+        $data = $hasil->fetch_assoc();
+        $_SESSION['username'] = $data['username'];
+        $_SESSION['isLogin'] = true;
 
-      header("location: admin.php");
+        header("location: admin.php");
     } else {
-      $loginMessage = true;
+        $loginMessage = true;
     }
     $conn->close();
-  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -61,9 +62,9 @@
                     <h2 class="card-title text-center text-uppercase">Login</h2>
 
                     <form action="login.php" method="POST">
-                        <?php 
-        if(isset($loginMessage)) : ?>
-                        <p>Username atau Password yang anda masukkan salah!</p>
+                        <?php
+                        if (isset($loginMessage)): ?>
+                            <p>Username atau Password yang anda masukkan salah!</p>
                         <?php endif; ?>
                         <div class="mb-3">
                             <label for="inputUser" class="form-label">Username</label>
@@ -90,6 +91,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+    </script>
 
 </html>

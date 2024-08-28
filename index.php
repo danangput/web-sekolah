@@ -1,4 +1,5 @@
 <?php
+define('SECURITY_CHECK', true);
 include "layout/header.php";
 include "layout/navbar.php";
 
@@ -44,7 +45,7 @@ switch ($page) {
         include "view/detailjurusan/analis.php";
         break;
 
-    
+
 }
 
 include "layout/footer.php";
