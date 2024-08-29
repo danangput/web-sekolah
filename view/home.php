@@ -1,6 +1,34 @@
 <!-- start header -->
 <section class="header">
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="public/img/Visi.jpg" class="d-block w-100 object-fit-cover" alt="Gambar Visi" height="700px">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5 class="text-uppercase" style="text-shadow: 1px 1px 1px aqua;">Visi Sekolah</h5>
+          <p style="text-shadow: 1px 1px 1px red;">Tetap Maju Walau Banyak Yang Sudah Mundur, Tetap Mundur Walau Sudah
+            Banyak Yang Maju</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="public/img/Misi.jpg" class="d-block w-100 object-fit-cover" alt="Gambar Misi" height="700px">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5 class="text-uppercase" style="text-shadow: 1px 1px 1px aqua;">Misi Sekolah</h5>
+          <p style="text-shadow: 1px 1px 1px red;">Mencerdaskan, Membimbing Serta Membantu Antar Sesama Warga Sekolah
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="public/img/Harapan.jpg" class="d-block w-100 object-fit-cover" alt="Gambar Harapan" height="700px">
+        <div class="carousel-caption d-none d-md-block text-white">
+          <h5 class="text-uppercase" style="text-shadow: 1px 1px 1px aqua;">Misi Sekolah</h5>
+          <p style="text-shadow: 1px 1px 1px red;">Mencerdaskan, Membimbing Serta Membantu Antar Sesama Warga Sekolah
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -45,7 +73,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
 </section>
 <!-- end header -->
 <!-- start kartu -->
@@ -124,7 +152,7 @@
         </div>
       </div>
     <?php } ?>
-    <?php
+  <?php
     $no++;
   } ?>
   <div class="row">
