@@ -71,6 +71,9 @@ switch ($page) {
     case 'guru-store':
         include "controller/guru/add_guru.php";
         break;
+    case 'guru-update':
+        include "controller/guru/update_guru.php";
+        break;
     case 'guru-destroy':
         include "controller/guru/delete_guru.php";
         break;
