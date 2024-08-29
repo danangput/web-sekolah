@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "\..\db_connect.php";
+include __DIR__ . "\..\db_connect.php";
 
 $id = $_POST['id_guru'];
 $nama = $_POST['nama_guru'];

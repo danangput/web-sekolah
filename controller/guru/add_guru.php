@@ -3,8 +3,10 @@ include __DIR__ . "\..\db_connect.php";
 
 if (isset($_POST['submit'])) {
   $nama = $_POST['nama'];
+  $jabatan = $_POST['jabatan'];
   $alamat = $_POST['alamat'];
   $no_telp = $_POST["no_telp"];
+  $deskripsi = $_POST['deskripsi'];
 
   if ($_FILES['gambar_guru']['name']) {
     $filename = $_FILES['gambar_guru']['name'];
@@ -20,7 +22,7 @@ if (isset($_POST['submit'])) {
         $gambar = $filename;
 }
 
-  mysqli_query($conn, "INSERT INTO guru(nama_guru, alamat, no_telp, gambar_guru) VALUES('$nama', '$alamat', '$no_telp','$gambar')");
+  mysqli_query($conn, "INSERT INTO guru(nama_guru,jabatan, alamat, no_telp, gambar_guru,deskripsi) VALUES('$nama','$jabatan', '$alamat', '$no_telp','$gambar','$deskripsi')");
 
   header("location:/web-sekolah/admin.php?page=guru");
 

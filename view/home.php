@@ -40,8 +40,11 @@
         <img src="public/img/Visi.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height: 700px;">
         <div class="carousel-caption d-none d-md-block text-white">
           <h5 class="text-uppercase" style="text-shadow: 1px 1px 1px aqua;">Visi Sekolah</h5>
-          <p style="text-shadow: 1px 1px 1px red;">Tetap Maju Walau Banyak Yang Sudah Mundur, Tetap Mundur Walau Sudah
-            Banyak Yang Maju</p>
+          <p style="text-shadow: 1px 1px 1px red;" ></p>
+            <marquee direction="left" scrollamount="6" style='text-shadow: 1px 1px 1px red; font-weight:bold;'>
+            Tetap Maju Walau Banyak Yang Sudah Mundur, Tetap Mundur Walau Sudah
+            Banyak Yang Maju
+</marquee>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
@@ -50,6 +53,7 @@
           <h5 class="text-uppercase" style="text-shadow: 1px 1px 1px aqua;">Misi Sekolah</h5>
           <p style="text-shadow: 1px 1px 1px red;">Mencerdaskan, Membimbing Serta Membantu Antar Sesama Warga Sekolah
           </p>
+          
         </div>
       </div>
       <div class="carousel-item">
@@ -122,12 +126,11 @@
         </div>
         <div class="col-9">
           <h2>Nama : <?= $guru['nama_guru'] ?></h2>
+          <h4>Jabatan : <?= $guru['jabatan'] ?> </h4>
           <div class="font-monospace">
             <h6 class="text-uppercase">Alamat : <?= $guru['alamat'] ?></h6>
             <h6 class="text-uppercase">No tlpn : <?= $guru['no_telp'] ?></h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et repudiandae odio. Enim alias
-              obcaecati nisi vel veniam reprehenderit voluptate, minima aliquid aspernatur minus expedita ullam esse aperiam
-              earum asperiores.</p>
+            <p><?= $guru['deskripsi'] ?>.</p>
           </div>
         </div>
       </div>
@@ -135,11 +138,11 @@
       <div class="row my-2 align-items-center">
         <div class="col-9 text-end">
           <h2>Nama :<?= $guru['nama_guru'] ?></h2>
+          <h4>Jabatan : <?= $guru['jabatan'] ?> </h4>
           <div class="font-monospace">
             <p>Alamat : <?= $guru['alamat'] ?></p>
             <p>No tlpn :<?= $guru['no_telp'] ?></p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat enim dicta at doloremque deserunt inventore
-              corporis assumenda consectetur hic, error amet expedita, consequatur adipisci, nesciunt animi nobis numquam?
+            <p><?= $guru['deskripsi'] ?> .
             </p>
           </div>
         </div>
