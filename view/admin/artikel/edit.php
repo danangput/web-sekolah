@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2 class="h2 text-center">Edit</h2>
-    <form action="admin.php?page=artikel-update" method="POST">
+    <form action="admin.php?page=artikel-update" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="inputTitle" class="form-label">Title</label>
             <input type="text" class="form-control" id="inputTitle" name="judul_artikel"
@@ -12,7 +12,7 @@
         </div>
         <div class="mb-3">
             <label for="inputImage">Image</label>
-            <input type="file" class="form-control-file" id="inputImage" name="gambar"
+            <input type="file" class="form-control-file" id="inputImage" name="gambar-artikel"
                 value="<?= $edit['gambar'] ?>">
         </div>
         <div class="mb-3">

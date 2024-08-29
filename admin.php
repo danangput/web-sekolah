@@ -56,6 +56,9 @@ switch ($page) {
     case 'jurusan-destroy':
         include "controller/jurusan/delete_jurusan.php";
         break;
+    case 'jurusan-update':
+        include "controller/jurusan/update_jurusan.php";
+        break;
     case 'guru':
         include "controller/guru/table_guru.php";
         include "view/admin/guru/table.php";
