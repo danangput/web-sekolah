@@ -28,14 +28,13 @@
                     <tbody>
                         <?php
                         $i = 1;
-                        while ($guru = mysqli_fetch_assoc($query)) {
+                        while ($client = mysqli_fetch_assoc($query)) {
                         ?>
                             <tr>
                                 <td><?= $i++ ?></td>
-                                <td><?= $guru['nama_guru'] ?></td>
-                                <td><?= $guru['no_telp'] ?></td>
-                                <td><?= $guru['no_telp'] ?></td>
-                                <td><?= $guru['no_telp'] ?></td>
+                                <td><?= $client['username'] ?></td>
+                                <td><?= $client['email'] ?></td>
+                                <td><?= $client['pesan'] ?></td>
                             </tr>
                         <?php
                         }

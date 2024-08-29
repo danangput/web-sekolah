@@ -191,10 +191,10 @@
         </div>
         <div class="col-6 bg-warning-subtle rounded-3 p-5">
           <h2 class="h2 mb-5 mt-2 text-center">Message</h2>
-          <form action="admin.php?page=client" method="POST">
+          <form action="admin.php?page=client-store" method="POST">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label h5">Username</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp"
+              <input type="text" class="form-control" id="exampleInputEmail1" name="username"
                 style="width: 50%;">
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
