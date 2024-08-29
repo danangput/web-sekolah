@@ -191,22 +191,22 @@
         </div>
         <div class="col-6 bg-warning-subtle rounded-3 p-5">
           <h2 class="h2 mb-5 mt-2 text-center">Message</h2>
-          <form action="admin.php?page=client" method="POST">
+          <form action="admin.php?page=client-store" method="POST">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label h5">Username</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp"
-                style="width: 50%;">
+              <input type="text" class="form-control" id="exampleInputEmail1" name="username"
+                style="width: 50%;" required>
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label h5">Email</label>
-              <input type="email" class="form-control" id="exampleInputPassword1" name="email" style="width: 50%;">
+              <input type="email" class="form-control" id="exampleInputPassword1" name="email" style="width: 50%;" required>
             </div>
             <!-- Text Box -->
             <div class="mb-3">
               <h5 class="h5">Pesan</h5>
               <textarea rows="5" cols="35" name="pesan" id="pesan"
-                style="border-radius: 10px; padding: 15px;"></textarea>
+                style="border-radius: 10px; padding: 15px;" required></textarea>
             </div>
             <!-- End Text Box -->
             <div class="mb-3 form-check">

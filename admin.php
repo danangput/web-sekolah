@@ -103,14 +103,10 @@ switch ($page) {
         break;
     case 'client':
         include "controller/client/table_client.php";
-        include "view/admin/client/table.php";
+        include "client/table.php";
         break;
-    case 'client-create':
-        // include "controller/client/add_client.php";
-        include "view/admin/client/tambah.php";
-    case 'client-edit':
-    case 'dashboard':
-        include "dashboard.php";
+    case 'client-store':
+        include "controller/client/add_client.php";
         break;
     case 'Login':
         include "login.php";
