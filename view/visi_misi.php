@@ -6,12 +6,12 @@
         <div class="col-8">
             <div class="card shadow border-3 border-warning">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="card-title mb-0 text-uppercase text-center">Visi dan Misi</h4>
+                    <h4 class="card-title mb-0 text-uppercase text-center">VISI dan MISI</h4>
                 </div>
                 <div class="card-body">
-                    <h4>Visi</h4>
+                    <h4>VISI</h4>
                     <p class="card-text">Menjadi perusahaan terdepan dalam inovasi teknologi yang berkelanjutan, berkontribusi pada pengembangan masyarakat global melalui produk dan layanan berkualitas.</p>
-                <h4 class="card-title mb-0">Misi</h4>
+                <h4 class="card-title mb-0">MISI</h4>
                 <p class="card-text">Menjadi perusahaan terdepan dalam inovasi teknologi yang berkelanjutan, berkontribusi pada pengembangan masyarakat global melalui produk dan layanan berkualitas.</p>
             </div>
             </div>
@@ -22,7 +22,7 @@
         <div class="col-4">
             <div class="card shadow border-3 border-danger">
                 <div class="card-header bg-dark-subtle text-drak">
-                    <h4 class="card-title mb-0 text-uppercase text-center">Sejarah</h4>
+                    <h4 class="card-title mb-0 text-uppercase text-center">SEJARAH</h4>
                 </div>
                 <div class="card-body">
                     <ul class="card-text">

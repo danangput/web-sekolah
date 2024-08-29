@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 22, 2024 at 03:07 AM
+-- Generation Time: Aug 29, 2024 at 02:32 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -44,8 +44,10 @@ CREATE TABLE `artikel` (
 CREATE TABLE `guru` (
   `id_guru` int NOT NULL,
   `nama_guru` varchar(100) NOT NULL,
+  `jabatan` varchar(100) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `no_telp` varchar(100) NOT NULL,
+  `deskripsi` longtext NOT NULL,
   `gambar_guru` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -60,6 +62,19 @@ CREATE TABLE `jurusan` (
   `nama_jurusan` varchar(300) NOT NULL,
   `gambar` varchar(255) NOT NULL,
   `deskripsi` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pesan`
+--
+
+CREATE TABLE `pesan` (
+  `id_pesan` int NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `pesan` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -124,6 +139,12 @@ ALTER TABLE `jurusan`
   ADD PRIMARY KEY (`id_jurusan`);
 
 --
+-- Indexes for table `pesan`
+--
+ALTER TABLE `pesan`
+  ADD PRIMARY KEY (`id_pesan`);
+
+--
 -- Indexes for table `prestasi`
 --
 ALTER TABLE `prestasi`
@@ -162,6 +183,12 @@ ALTER TABLE `guru`
 --
 ALTER TABLE `jurusan`
   MODIFY `id_jurusan` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `pesan`
+--
+ALTER TABLE `pesan`
+  MODIFY `id_pesan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `prestasi`
