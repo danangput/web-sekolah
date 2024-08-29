@@ -95,6 +95,14 @@ switch ($page) {
     case 'prestasi-destroy':
         include "controller/prestasi/delete_prestasi.php";
         break;
+    case 'client':
+        include "controller/client/table_client.php";
+        include "view/admin/client/table.php";
+        break;
+    case 'client-create':
+        // include "controller/client/add_client.php";
+        include "view/admin/client/tambah.php";
+    case 'client-edit':
     case 'dashboard':
         include "dashboard.php";
         break;
