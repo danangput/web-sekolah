@@ -76,7 +76,8 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] == 0) {
 // $tmpname = $_FILES['gambar']['tmp_name'];
 // $folder = $file . $gambar;
 // if (move_uploaded_file($tmpname, $folder)) {
-// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi = '$deskripsi' WHERE id_artikel = $id";
+// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi =
+'$deskripsi' WHERE id_artikel = $id";
 // $update = mysqli_query($conn, $query);
 // header("location: /web-sekolah/admin.php?page=artikel");
 // exit;
@@ -85,7 +86,8 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] == 0) {
 // }
 // } else {
 // $gambar = $result['gambar'];
-// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', deskripsi = '$deskripsi' WHERE id_artikel = $id";
+// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', deskripsi = '$deskripsi' WHERE
+id_artikel = $id";
 // $update = mysqli_query($conn, $query);
 // header("location: /web-sekolah/admin.php?page=artikel");
 // exit;
@@ -117,7 +119,8 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] == 0) {
 // $tmpname = $_FILES['gambar']['tmp_name'];
 // $folder = $file . $gambar;
 // if (move_uploaded_file($tmpname, $folder)) {
-// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi = '$deskripsi' WHERE id_artikel = $id";
+// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi =
+'$deskripsi' WHERE id_artikel = $id";
 // $update = mysqli_query($conn, $query);
 // header("location: /web-sekolah/admin.php?page=artikel");
 // } else {
@@ -126,7 +129,8 @@ if (isset($_FILES['gambar']) && $_FILES['gambar']['error'] == 0) {
 // echo "Terdapat Kesalahan";
 // }
 
-// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi = '$deskripsi' WHERE id_artikel = $id";
+// $query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$gambar', deskripsi =
+'$deskripsi' WHERE id_artikel = $id";
 
 // $update = mysqli_query($conn, $query);
 
