@@ -12,7 +12,7 @@
         </div>
         <div class="mb-3">
             <label for="inputImage">Image</label>
-            <input type="file" class="form-control-file" id="inputImage" name="gambar.jpg"
+            <input type="file" class="form-control-file" id="inputImage" name="gambar"
                 value="<?= $edit['gambar'] ?>">
         </div>
         <div class="mb-3">
