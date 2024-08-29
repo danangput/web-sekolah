@@ -1,56 +1,35 @@
 <?php
-include __DIR__ . '/../db_connect.php';  // Gunakan '/' sebagai pemisah direktori
+include __DIR__ . "\..\db_connect.php";
 
-// Periksa apakah form data dan file telah diterima
-if (isset($_POST['id_guru'], $_POST['nama_guru'], $_POST['alamat'], $_POST['no_telp']) && isset($_FILES['gambar'])) {
-  $id = mysqli_real_escape_string($conn, $_POST['id_guru']);
-  $nama = mysqli_real_escape_string($conn, $_POST['nama_guru']);
-  $alamat = mysqli_real_escape_string($conn, $_POST['alamat']);
-  $no_telp = mysqli_real_escape_string($conn, $_POST['no_telp']);
+$id = $_POST['id_guru'];
+$nama = $_POST['nama_guru'];
+$alamat = $_POST['alamat'];
+$no_telp = $_POST['no_telp'];
+$image = $_FILES['gambar']['name'];
+$newTmpName = $_FILES['gambar']['tmp_name'];
+$folder = 'public/img/guru/';
 
-  $newimage = $_FILES['gambar']['name'];
-  $newtmpname = $_FILES['gambar']['tmp_name'];
-  $folder = 'public/img/guru/' . $newimage; // Tentukan folder tujuan
+$query_guru = mysqli_query($conn, "SELECT * FROM guru WHERE id_guru = $id");
+$result = mysqli_fetch_assoc($query_guru);
+$old_gambar = 'public/img/guru/' . $result['gambar_guru'];
 
-  // Query untuk mendapatkan data gambar lama
-  $query_guru = mysqli_query($conn, "SELECT gambar_guru FROM guru WHERE id_guru = $id");
-  if (!$query_guru) {
-    die('Query error: ' . mysqli_error($conn));
+if (file_exists($old_gambar)) {
+  if (!$image) {
+    $image = $result['gambar_guru'];
   }
+  // hapus gambar Lama
+  unlink($old_gambar);
+  // upload gambar baru
+  move_uploaded_file($newTmpName, $folder . $image);
+}
 
-  $result = mysqli_fetch_assoc($query_guru);
-  $path_gambar = 'public/img/guru/' . $result['gambar_guru'];
-
-  if (file_exists($path_gambar)) {
-    if (!$newimage) {
-      $newimage = $result['gambar_guru'];
-    }
-  }
+$query = "UPDATE guru SET nama_guru = '$nama', alamat= '$alamat', no_telp = '$no_telp', gambar_guru= '$image' WHERE id_guru = $id";
 
 
-  // Hapus gambar lama jika ada
-  if (file_exists($path_gambar)) {
-    unlink($path_gambar);
-  }
+$update = mysqli_query($conn, $query);
 
-  // Pindahkan gambar yang diupload
-  if (move_uploaded_file($newtmpname, $folder)) {
-    // Update query
-    $query = "UPDATE guru SET nama_guru = '$nama', alamat = '$alamat', no_telp = '$no_telp', gambar_guru = '$newimage' WHERE id_guru = $id";
-
-    $update = mysqli_query($conn, $query);
-
-    if ($update) {
-      header("Location: /web-sekolah/admin.php?page=guru");
-      exit(); // Pastikan script dihentikan setelah redirect
-    } else {
-      echo 'Update error: ' . mysqli_error($conn);
-    }
-  } else {
-    echo 'File upload error.';
-  }
-} else {
-  echo 'Invalid input.';
+if ($update) {
+  header("location: /web-sekolah/admin.php?page=guru");
 }
 
 ?>
