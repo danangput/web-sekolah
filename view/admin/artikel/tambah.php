@@ -5,7 +5,7 @@
     if (isset($_SESSION['execution'])):
     ?>
       <div class="alert alert-danger" role="alert">
-        <span>Jumlah karakter melebihi</span>
+        <span><?= $_SESSION['execution']; ?></span>
       </div>
     <?php
     endif;

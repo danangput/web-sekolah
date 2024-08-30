@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "\..\db_connect.php";
+// session_start();
 
 if (isset($_POST['submit'])) {
     $judul = $_POST['judul_artikel'];
@@ -10,11 +11,12 @@ if (isset($_POST['submit'])) {
         $tmpname = $_FILES['gambar']['tmp_name'];
         $filesize = $_FILES['gambar']['size'];
 
-        $max_char = 10;
+        $max_char = 30;
+        $jmlhJudul = strlen($judul);
+        var_dump($jmlhJudul);
 
-
-        if (strlen($judul) > $max_char) {
-            $alertMessage = "Inputan anda melebihi jumlah character ($max_char)";
+        if ($jmlhJudul > $max_char) {
+            $_SESSION['execution'] = "Input melebihi jumlah character";
         }
 
         if ($filesize > 1000000) {
