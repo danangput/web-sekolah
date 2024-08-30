@@ -74,7 +74,7 @@ CREATE TABLE `pesan` (
   `id_pesan` int NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `pesan` varchar(255) NOT NULL
+  `pesan` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------

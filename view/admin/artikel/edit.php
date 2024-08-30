@@ -17,10 +17,15 @@
         </div>
         <div class="mb-3">
             <label for="inputDesc">Description</label>
-            <textarea class="form-control" id="inputDesc" name="deskripsi" rows="3"
+            <textarea class="form-control" id="summernote" name="deskripsi" rows="3"
                 required><?= $edit['deskripsi'] ?></textarea>
         </div>
         <input type="hidden" name="id_artikel" value="<?= $edit['id_artikel'] ?>">
+        <script>
+            $(document).ready(function() {
+                $('#summernote').summernote();
+            });
+        </script>
         <button type="submit" class="btn btn-info" name="submit">Submit</button>
     </form>
 </div>

@@ -22,6 +22,7 @@
                             <th>No</th>
                             <th>Judul</th>
                             <th>Gambar</th>
+                            <th>Deskripsi</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -35,6 +36,7 @@
                                 <td><?= $artikel['judul_artikel'] ?></td>
                                 <td><img src="public/img/artikel/<?= $artikel['gambar'] ?>" alt="" class="img-fluid"
                                         style="width: 200px; height: 200px"></td>
+                                <td><?= $artikel['deskripsi'] ?></td>
                                 <td><a href="?page=artikel-destroy&id_artikel=<?= $artikel['id_artikel'] ?>"
                                         class="btn btn-danger"
                                         onclick="return confirm('Apakah anda yakin ingin menghapusnya ??')">Hapus</a> | <a
