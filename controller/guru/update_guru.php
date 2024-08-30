@@ -5,9 +5,10 @@ $id = $_POST['id_guru'];
 $nama = $_POST['nama_guru'];
 $alamat = $_POST['alamat'];
 $no_telp = $_POST['no_telp'];
-$image = $_FILES['gambar']['name'];
+$image = $_FILES['gambar_guru']['name'];
 $newTmpName = $_FILES['gambar']['tmp_name'];
 $folder = 'public/img/guru/';
+
 
 $query_guru = mysqli_query($conn, "SELECT * FROM guru WHERE id_guru = $id");
 $result = mysqli_fetch_assoc($query_guru);

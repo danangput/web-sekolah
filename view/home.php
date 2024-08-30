@@ -213,7 +213,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Save Changes</label>
             </div>
-            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit" onclick="alert('Message sent successfully\nTunggu Admin membalas pesan anda\nAdmin sedang mengetik...')">Submit</button>
           </form>
         </div>
       </div>

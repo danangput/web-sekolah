@@ -108,6 +108,9 @@ switch ($page) {
     case 'client-store':
         include "controller/client/add_client.php";
         break;
+    case 'dashboard':
+        include "view/admin/dashboard.php";
+        break;
     case 'Login':
         include "login.php";
         break;
