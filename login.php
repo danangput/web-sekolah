@@ -26,7 +26,7 @@ if (isset($_POST['login'])) {
         $r1 = mysqli_fetch_array($q1);
         if (mysqli_num_rows($result) === 1) {
             if ($r1['password'] === md5($password)) {
-                $_SESSION['username'] = $data['username'];
+                $_SESSION['username'] = $nama;
                 $_SESSION['isLogin'] = true;
                 header("location: admin.php");
                 exit;
@@ -99,7 +99,7 @@ if (isset($_POST['login'])) {
                     <form action="" method="POST">
                         <?php
                         if ($err): ?>
-                            <p>Username atau Password yang anda masukkan salah!</p>
+                        <p>Username atau Password yang anda masukkan salah!</p>
                         <?php endif; ?>
                         <div class="mb-3">
                             <label for="inputUser" class="form-label">Username</label>
@@ -119,7 +119,8 @@ if (isset($_POST['login'])) {
                             </button>
                         </div>
                         <span class="d-flex justify-content-center">
-                            <a class="text-center text-decoration-none" href="#" style="text-shadow: 2px 2px 3px white;">forgot password ?</a>
+                            <a class="text-center text-decoration-none" href="#"
+                                style="text-shadow: 2px 2px 3px white;">forgot password ?</a>
                         </span>
                     </form>
                 </div>
