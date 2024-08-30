@@ -16,7 +16,7 @@
                 value="<?= $edit['gambar'] ?>">
         </div>
         <div class="mb-3">
-            <label for="inputDesc">Description</label>
+            <label>Description</label>
             <textarea class="form-control" id="summernote" name="deskripsi" rows="3"
                 required><?= $edit['deskripsi'] ?></textarea>
         </div>
