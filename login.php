@@ -119,8 +119,9 @@ if (isset($_POST['login'])) {
                             </button>
                         </div>
                         <span class="d-flex justify-content-center">
-                            <a class="text-center text-decoration-none" href="#"
-                                style="text-shadow: 2px 2px 3px white;">forgot password ?</a>
+                            <a class="text-center text-decoration-none"
+                                href="http://localhost/web-sekolah/admin.php?page=gantipass"
+                                style="text-shadow: 2px 2px 3px white;">ubah password ?</a>
                         </span>
                     </form>
                 </div>

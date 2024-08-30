@@ -117,6 +117,9 @@ switch ($page) {
     case 'logout':
         include "logout.php";
         break;
+    case 'gantipass':
+        include "ubahpass.php";
+        break;
 }
 
 include "layout_admin/footer.php";

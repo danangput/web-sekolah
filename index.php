@@ -44,6 +44,7 @@ switch ($page) {
     case 'login':
         include "login.php";
         break;
+
 }
 
 include "layout/footer.php";
