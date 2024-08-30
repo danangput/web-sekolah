@@ -13,9 +13,9 @@ if (isset($_POST['Login'])) {
     $nama = $_POST['username'];
     $password = $_POST['password'];
 
-    // $hash_password = hash('sha256', $password);
+    $hash_password = hash('MD5', $password);
 
-    $sql = "SELECT * FROM user WHERE username = '$nama' AND password = '$password'";
+    $sql = "SELECT * FROM user WHERE username = '$nama' AND password = '$hash_password'";
 
     $hasil = $conn->query($sql);
 
