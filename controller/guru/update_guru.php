@@ -12,18 +12,19 @@ $folder = 'public/img/guru/';
 
 $query_guru = mysqli_query($conn, "SELECT * FROM guru WHERE id_guru = $id");
 $result = mysqli_fetch_assoc($query_guru);
-$old_gambar = 'public/img/guru/' . $result['gambar_guru'];
+$old_gambar = $folder . $result['gambar_guru'];
 
-if (file_exists($old_gambar)) {
-  if (!$image) {
-    $image = $result['gambar_guru'];
+// Jika gambar baru di-upload
+if ($image) {
+  // Hapus gambar lama jika ada
+  if (file_exists($old_gambar)) {
+    unlink($old_gambar);
   }
-  // hapus gambar Lama
-  unlink($old_gambar);
-  // upload gambar baru
+  // Pindahkan gambar baru ke folder
   move_uploaded_file($newTmpName, $folder . $image);
-  // echo "Gambar sudah ada";
-  // }
+} else {
+  // Jika tidak ada gambar baru, gunakan gambar lama
+  $image = $result['gambar_guru'];
 }
 
 $query = "UPDATE guru SET nama_guru = '$nama', alamat= '$alamat', no_telp = '$no_telp', gambar_guru= '$image' WHERE id_guru = $id";

@@ -56,6 +56,9 @@ switch ($page) {
     case 'jurusan-destroy':
         include "controller/jurusan/delete_jurusan.php";
         break;
+    case 'jurusan-update':
+        include "controller/jurusan/update_jurusan.php";
+        break;
     case 'guru':
         include "controller/guru/table_guru.php";
         include "view/admin/guru/table.php";
@@ -81,6 +84,9 @@ switch ($page) {
         include "controller/prestasi/table_prestasi.php";
         include "view/admin/prestasi/table.php";
         break;
+    case 'prestasi-update':
+        include "controller/prestasi/update_prestasi.php";
+        break;
     case 'prestasi-create':
         // include "controller/prestasi/add_prestasi.php";
         include "view/admin/prestasi/tambah.php";
@@ -95,8 +101,15 @@ switch ($page) {
     case 'prestasi-destroy':
         include "controller/prestasi/delete_prestasi.php";
         break;
+    case 'client':
+        include "controller/client/table_client.php";
+        include "client/table.php";
+        break;
+    case 'client-store':
+        include "controller/client/add_client.php";
+        break;
     case 'dashboard':
-        include "dashboard.php";
+        include "view/admin/dashboard.php";
         break;
     case 'Login':
         include "login.php";

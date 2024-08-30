@@ -47,11 +47,8 @@ switch ($page) {
     case 'logout':
         include "logout.php";
         break;
-
-
 }
 
 include "layout/footer.php";
 
 //penggunaan routing http://localhost/web-sekolah/index.php?page=visi_misi
-?>
