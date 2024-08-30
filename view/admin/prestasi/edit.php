@@ -5,11 +5,12 @@
             <label for="inputName" class="form-label">Name</label>
             <input type="text" class="form-control" id="inputName" name="nama" value="<?= $edit['nama'] ?>">
         </div>
-        <div class="mb-3">
-            <label for="inputDesc">Description</label>
-            <textarea class="form-control" id="inputDesc" rows="3" required
-                name="deskripsi"><?= $edit['deskripsi'] ?></textarea>
-        </div>
+        <textarea id="summernote" name="deskripsi"></textarea>
+    <script>
+      $(document).ready(function() {
+        $('#summernote').summernote();
+      });
+    </script>
         <div class="mb-3">
             <label for="inputImage">Image</label>
             <input type="file" class="form-control-file" id="inputImage" name="gambar-prestasi"

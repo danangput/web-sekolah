@@ -17,6 +17,12 @@
             <label for="inputImage">Image</label>
             <input type="file" class="form-control-file" name="gambar_guru" value="<?= $edit['gambar_guru'] ?>">
         </div>
+        <textarea id="summernote" name="deskripsi"></textarea>
+    <script>
+      $(document).ready(function() {
+        $('#summernote').summernote();
+      });
+    </script>
         <input type="hidden" name="id_guru" value="<?= $edit['id_guru'] ?>">
         <button type="submit" class="btn btn-info">Submit</button>
     </form>
