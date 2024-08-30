@@ -10,6 +10,13 @@ if (isset($_POST['submit'])) {
         $tmpname = $_FILES['gambar']['tmp_name'];
         $filesize = $_FILES['gambar']['size'];
 
+        $max_char = 10;
+
+
+        if (strlen($judul) > $max_char) {
+            $alertMessage = "Inputan anda melebihi jumlah character ($max_char)";
+        }
+
         if ($filesize > 1000000) {
             echo "ukuran gambar terlalu besar";
             exit();
