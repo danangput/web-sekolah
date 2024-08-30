@@ -22,10 +22,12 @@
       <label for="inputImage">Image</label>
       <input type="file" class="form-control-file" id="inputImage" name="gambar_guru" accept="image/*">
     </div>
-    <div class="mb-3">
-    <label for="inputDesc">Description</label>
-    <textarea class="form-control" id="inputDesc" rows="3" required name="deskripsi"></textarea>
-  </div>
+    <textarea id="summernote" name="deskripsi"></textarea>
+    <script>
+      $(document).ready(function() {
+        $('#summernote').summernote();
+      });
+    </script>
 
     <button type="submit" class="btn btn-info" name="submit">Submit</button>
   </form>
