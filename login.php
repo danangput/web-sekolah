@@ -8,9 +8,9 @@ if (isset($_SESSION["isLogin"])) {
 }
 include "controller/db_connect.php";
 
-$nama= '';
-$password= '';
-$err= '';
+$nama = '';
+$password = '';
+$err = '';
 
 if (isset($_POST['login'])) {
     $nama = $_POST['username'];
@@ -45,13 +45,13 @@ if (isset($_POST['login'])) {
 
     // if( mysqli_num_rows($result) === 1 ){
     //     $loginMessage = true;
-        // $row = mysqli_fetch_assoc($result);
-        // if (password_verify($password, $row["password"])){
-        //     $_SESSION['username'] = $data['username'];
-        //     $_SESSION['isLogin'] = true;
-        //     header("location: admin.php");
-        // }
-        // $loginMessage = true;
+    // $row = mysqli_fetch_assoc($result);
+    // if (password_verify($password, $row["password"])){
+    //     $_SESSION['username'] = $data['username'];
+    //     $_SESSION['isLogin'] = true;
+    //     header("location: admin.php");
+    // }
+    // $loginMessage = true;
     // }
     // $mssg = true;
 }
@@ -99,7 +99,7 @@ if (isset($_POST['login'])) {
                     <form action="" method="POST">
                         <?php
                         if ($err): ?>
-                        <p>Username atau Password yang anda masukkan salah!</p>
+                            <p>Username atau Password yang anda masukkan salah!</p>
                         <?php endif; ?>
                         <div class="mb-3">
                             <label for="inputUser" class="form-label">Username</label>
@@ -109,7 +109,7 @@ if (isset($_POST['login'])) {
                             <label for="inputPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="inputPassword" name="password" required />
                         </div>
-                        <div class="d-flex justify-content-center gap-5">
+                        <div class="d-flex justify-content-center gap-5 mb-3">
                             <a href="http://localhost/web-sekolah/index.php?page=home" style="letter-spacing: 1.5px"
                                 class="btn btn-success">
                                 <i class="bi bi-house-door" style="margin-right: 2px"></i>Home
@@ -118,6 +118,9 @@ if (isset($_POST['login'])) {
                                 <i class="bi bi-box-arrow-in-right" style="margin-right: 2px"></i> Login
                             </button>
                         </div>
+                        <span class="d-flex justify-content-center">
+                            <a class="text-center text-decoration-none" href="#" style="text-shadow: 2px 2px 3px white;">forgot password ?</a>
+                        </span>
                     </form>
                 </div>
             </div>
