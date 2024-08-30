@@ -103,8 +103,7 @@ if (isset($_POST['login'])) {
                         <?php endif; ?>
                         <div class="mb-3">
                             <label for="inputUser" class="form-label">Username</label>
-                            <input type="text" value="<?= $username ?>" class="form-control" id="inputUser"
-                                name="username" required />
+                            <input type="text" class="form-control" id="inputUser" name="username" required />
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Password</label>
