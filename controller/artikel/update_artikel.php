@@ -6,7 +6,7 @@ $id = $_POST['id_artikel'];
 $judul = $_POST['judul_artikel'];
 $tanggal = $_POST['tanggal'];
 $deskripsi = $_POST['deskripsi'];
-$image = $_FILES['gambar-artikel']['name'];
+$filename = $_FILES['gambar-artikel']['name'];
 $newTmpImg = $_FILES['gambar-artikel']['tmp_name'];
 $folder = 'public/img/artikel/';
 
@@ -15,25 +15,34 @@ $result = mysqli_fetch_assoc($query_artikel);
 $old_gambar = $folder . $result['gambar'];
 
 // Jika gambar baru di-upload
-if ($image) {
+if ($filename) {
   // Hapus gambar lama jika ada
-  if (file_exists($old_gambar)) {
-    unlink($old_gambar);
+  if (file_exists($old_gambar) && !is_dir($old_gambar)) {
+    unlink($old_gambar); // Hapus gambar lama
   }
-  // Pindahkan gambar baru ke folder
-  move_uploaded_file($newTmpImg, $folder . $image);
+
+  // Cek nama file yang sama dan ubah jika sudah ada
+  $new_filename = $filename;
+  $i = 1;
+  while (file_exists($folder . $new_filename)) {
+    // Jika file sudah ada, tambahkan angka di akhir nama file
+    $new_filename = pathinfo($filename, PATHINFO_FILENAME) . '_' . $i . '.' . pathinfo($filename, PATHINFO_EXTENSION);
+    $i++;
+  }
+
+  // Pindahkan gambar baru ke folder dengan nama yang unik
+  move_uploaded_file($newTmpImg, $folder . $new_filename);
+  $filename = $new_filename; // Gunakan nama file yang sudah diubah
 } else {
   // Jika tidak ada gambar baru, gunakan gambar lama
-  $image = $result['gambar'];
+  $filename = $result['gambar'];
 }
 
-$query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$image', deskripsi =
-'$deskripsi' WHERE id_artikel = $id";
-
+// Update data di database
+$query = "UPDATE artikel SET judul_artikel = '$judul', tanggal = '$tanggal', gambar = '$filename', deskripsi = '$deskripsi' WHERE id_artikel = $id";
 $update = mysqli_query($conn, $query);
 
-if($update){
+if ($update) {
   header("location: /web-sekolah/admin.php?page=artikel");
 }
-
 ?>

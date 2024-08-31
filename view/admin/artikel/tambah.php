@@ -2,13 +2,15 @@
   <h2 class="h2 text-center">Tambah</h2>
   <form action="?page=artikel-store" method="POST" enctype="multipart/form-data">
     <?php
-    if (isset($_SESSION['execution'])):
-    ?>
+    if (isset($_SESSION['alert'])):
+      ?>
       <div class="alert alert-danger" role="alert">
-        <span><?= $_SESSION['execution']; ?></span>
+        <span><?php echo $_SESSION['alert']; ?></span>
       </div>
-    <?php
+      <?php
     endif;
+    // hapus session setelah ganti halaman
+    unset($_SESSION['alert']);
     ?>
     <div class="mb-3">
       <label for="inputTitle" class="form-label">Title</label>
@@ -25,7 +27,7 @@
     <label for="summernote">Description</label>
     <textarea id="summernote" name="deskripsi"></textarea>
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         $('#summernote').summernote();
       });
     </script>
