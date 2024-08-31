@@ -59,6 +59,13 @@
 
      <hr class="sidebar-divider my-0">
 
+     <li class="nav-item mt-3">
+         <span class="d-flex justify-content-center">
+             <a class="text-center btn-sm btn-outline-info text-uppercase text-decoration-none"
+                 href="ubahpass.php"><i class="fas fa-exchange-alt"></i> change password</a>
+         </span>
+     </li>
+
      <li class="nav-item my-3 d-flex justify-content-center">
          <a class="btn btn-outline-danger text-white" href="/web-sekolah/admin.php?page=logout" onclick="confirm('Anda yakin ingin logout ?')">
              <i class="fas fa-door-open"></i>
