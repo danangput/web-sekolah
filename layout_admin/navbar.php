@@ -1,5 +1,6 @@
  <!-- Sidebar -->
- <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="letter-spacing: 2px; background: linear-gradient(to top, #071952, black)">
+ <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar"
+     style="letter-spacing: 2px; background: linear-gradient(to top, #071952, black)">
 
      <!-- Sidebar - Brand -->
      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
