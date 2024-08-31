@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . "\..\db_connect.php";
+// session_start();
 
 // catch form input =============================================
 if (isset($_POST['submit'])) {
