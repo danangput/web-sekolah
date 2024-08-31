@@ -9,6 +9,7 @@
       </div>
       <?php
     endif;
+    // hapus session setelah ganti halaman
     unset($_SESSION['alert']);
     ?>
     <div class="mb-3">
