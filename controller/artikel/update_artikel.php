@@ -19,18 +19,18 @@ if ($filename) {
   // Hapus gambar lama jika ada
   if (file_exists($old_gambar)) {
     unlink($old_gambar);
+    //cek nama file yang sama
+    $new_filename = $filename;
+    $i = 1;
+    while (file_exists($folder . $new_filename)) {
+      $new_filename = pathinfo($filename, PATHINFO_FILENAME) . '_' . $i . '.' . pathinfo($filename, PATHINFO_EXTENSION);
+      $i++;
+    }
+    // Pindahkan gambar baru ke folder
+    move_uploaded_file($newTmpImg, $folder . $new_filename);
+    // move_uploaded_file($newTmpImg, $folder . $filename);
+    $filename = $new_filename;
   }
-  //cek nama file yang sama
-  // $new_filename = $filename;
-  // $i = 1;
-  // while (file_exists($folder . $new_filename)) {
-  //   $new_filename = pathinfo($filename, PATHINFO_FILENAME) . '_' . $i . '.' . pathinfo($filename, PATHINFO_EXTENSION);
-  //   $i++;
-  // }
-  // Pindahkan gambar baru ke folder
-  // move_uploaded_file($newTmpImg, $folder . $new_filename);
-  move_uploaded_file($newTmpImg, $folder . $filename);
-  // $filename = $new_filename;
 } else {
   // Jika tidak ada gambar baru, gunakan gambar lama
   $filename = $result['gambar'];
