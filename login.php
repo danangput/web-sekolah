@@ -99,7 +99,7 @@ if (isset($_POST['login'])) {
                     <form action="" method="POST">
                         <?php
                         if ($err): ?>
-                        <p>Username atau Password yang anda masukkan salah!</p>
+                            <p>Username atau Password yang anda masukkan salah!</p>
                         <?php endif; ?>
                         <div class="mb-3">
                             <label for="inputUser" class="form-label">Username</label>
@@ -118,11 +118,6 @@ if (isset($_POST['login'])) {
                                 <i class="bi bi-box-arrow-in-right" style="margin-right: 2px"></i> Login
                             </button>
                         </div>
-                        <span class="d-flex justify-content-center">
-                            <a class="text-center text-decoration-none"
-                                href="http://localhost/web-sekolah/admin.php?page=gantipass"
-                                style="text-shadow: 2px 2px 3px white;">ubah password ?</a>
-                        </span>
                     </form>
                 </div>
             </div>

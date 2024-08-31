@@ -6,25 +6,26 @@ include "controller/db_connect.php";
 $err = '';
 $err1 = '';
 
-if (isset($_POST['ganti'])) {
+if (isset($_POST['ubah'])) {
     $user = $_POST['username'];
     $old = $_POST['oldpass'];
     $new = $_POST['newpass'];
-    
+
     $sqli = "SELECT * FROM user WHERE username = '$user'";
     $qli = mysqli_query($conn, $sqli);
     $r1 = mysqli_fetch_array($qli);
-    if (mysqli_num_rows($qli) === 1 ) {
+    if (mysqli_num_rows($qli) === 1) {
         if ($r1['password'] === md5($old)) {
             $enkrip = md5($new);
             mysqli_query($conn, "UPDATE user SET password = '$enkrip' WHERE username = '$user'");
-            header("Location: login.php");
+            header("location: login.php");
+            exit;
         } else {
             $err = true;
         }
     } else {
         $err1 = true;
-}
+    }
 }
 
 ?>
@@ -42,31 +43,40 @@ if (isset($_POST['ganti'])) {
 </head>
 
 <body>
-    <form class="col g-3" action="" method="POST">
-        <?php
-                        if ($err1): ?>
-        <p>Username yang anda masukkan salah!</p>
-        <?php endif; ?>
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">username</label>
-            <input type="text" class="form-control" id="inputEmail4" name="username" required>
+    <div class="container-fluid" style="background: linear-gradient(to bottom, black, darkblue)">
+        <div class="d-flex justify-content-center align-items-center min-vh-100"">
+            <div class=" card border border-white border-3" style="width: 50rem; background-color: rgba(0, 0, 0, .3); padding: 5rem">
+            <div class="card-body">
+                <h2 class="card-title text-white text-center text-uppercase">Edit Password</h2>
+                <form class="col g-3" action="?page=ubahpass" method="POST">
+                    <?php
+                    if ($err1): ?>
+                        <p class="text-danger">*Username yang anda masukkan salah!</p>
+                    <?php endif; ?>
+                    <div class="mb-3">
+                        <label for="inputEmail4" class="form-label text-white">username</label>
+                        <input type="text" class="form-control" id="inputEmail4" name="username" required>
+                    </div>
+                    <?php
+                    if ($err): ?>
+                        <p class="text-danger">*Password yang anda masukkan tidak sama!</p>
+                    <?php endif; ?>
+                    <div class="mb-3">
+                        <label for="inputPassword4" class="form-label text-white">Old Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" name="oldpass" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="inputPassword4" class="form-label text-white">New Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" name="newpass" required>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary" name="ubah">Change password</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <?php
-                        if ($err): ?>
-        <p>Password yang anda masukkan tidak sama!</p>
-        <?php endif; ?>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Old Password</label>
-            <input type="password" class="form-control" id="inputPassword4" name="oldpass" required>
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">New Password</label>
-            <input type="password" class="form-control" id="inputPassword4" name="newpass" required>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary" name="ganti">Sign in</button>
-        </div>
-    </form>
+    </div>
+    </div>
 </body>
 
 </html>
