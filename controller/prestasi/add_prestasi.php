@@ -14,9 +14,16 @@
           echo "ukuran gambar terlalu besar";
           exit();
       }
-      $folder = "public/img/prestasi/". $filename;
-          move_uploaded_file($tmpname, $folder);
-          $gambar = $filename;
+      $folder = "public/img/prestasi/";
+      $new_filename = $filename;
+      $i = 1;
+      while (file_exists($folder . $new_filename)) {
+          $new_filename = pathinfo($filename, PATHINFO_FILENAME) . '_' . $i . '.' . pathinfo($filename, PATHINFO_EXTENSION);
+          $i++;
+      }
+   
+          move_uploaded_file($tmpname, $folder.$new_filename);
+          $gambar = $new_filename;
   }
     $tanggal = $_POST['tanggal'];
 
