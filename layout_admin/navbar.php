@@ -61,7 +61,7 @@
 
      <li class="nav-item mt-3">
          <span class="d-flex justify-content-center">
-             <a class="text-center btn-sm btn-outline-info text-uppercase text-decoration-none"
+             <a class="text-center btn-sm btn btn-outline-info text-uppercase text-decoration-none"
                  href="ubahpass.php"><i class="fas fa-exchange-alt"></i> change password</a>
          </span>
      </li>
@@ -71,6 +71,5 @@
              <i class="fas fa-door-open"></i>
              Logout</a>
      </li>
-
  </ul>
  <!-- End of Sidebar -->
