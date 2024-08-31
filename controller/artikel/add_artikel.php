@@ -1,6 +1,7 @@
 <?php
 include __DIR__ . "\..\db_connect.php";
 
+// catch form input =============================================
 if (isset($_POST['submit'])) {
     $judul = $_POST['judul_artikel'];
     $tanggal = $_POST['tanggal'];
@@ -10,17 +11,19 @@ if (isset($_POST['submit'])) {
         $tmpname = $_FILES['gambar']['tmp_name'];
         $filesize = $_FILES['gambar']['size'];
 
+        // form validation ======================================
         $max_char = 10;
-
-
         if (strlen($judul) > $max_char) {
-            $alertMessage = "Inputan anda melebihi jumlah character ($max_char)";
+            $_SESSION['alert'] = "Inputan anda melebihi character ($max_char)";
+            header("location: /web-sekolah/admin.php?page=artikel-create");
+            exit();
         }
 
         if ($filesize > 1000000) {
             echo "ukuran gambar terlalu besar";
             exit();
         }
+        // end form validation===============================================================
 
         $folder = "public/img/artikel/";
         $new_filename = $filename;
