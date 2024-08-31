@@ -17,9 +17,15 @@ if (isset($_POST['submit'])) {
         echo "ukuran gambar terlalu besar";
         exit();
     }
-    $folder = "public/img/guru/". $filename;
-        move_uploaded_file($tmpname, $folder);
-        $gambar = $filename;
+    $folder = "public/img/guru/";
+        $new_filename = $filename;
+        $i = 1;
+        while (file_exists($folder . $new_filename)) {
+            $new_filename = pathinfo($filename, PATHINFO_FILENAME) . '_' . $i . '.' . pathinfo($filename, PATHINFO_EXTENSION);
+            $i++;
+        }
+        move_uploaded_file($tmpname, $folder.$new_filename);
+        $gambar = $new_filename;
 }
 
   mysqli_query($conn, "INSERT INTO guru(nama_guru,jabatan, alamat, no_telp, gambar_guru,deskripsi) VALUES('$nama','$jabatan', '$alamat', '$no_telp','$gambar','$deskripsi')");
