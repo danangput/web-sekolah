@@ -11,7 +11,7 @@
             <input type="date" id="inputDate" name="tanggal" value="<?= $edit['tanggal'] ?>">
         </div>
         <div class="mb-3">
-            <label for="inputImage">Image</label>
+            <label for="inputImage">Image | <?php echo $edit['gambar']; ?></label>
             <input type="file" class="form-control-file" id="inputImage" name="gambar-artikel"
                 value="<?= $edit['gambar'] ?>">
         </div>
@@ -22,7 +22,7 @@
         </div>
         <input type="hidden" name="id_artikel" value="<?= $edit['id_artikel'] ?>">
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('#summernote').summernote();
             });
         </script>
